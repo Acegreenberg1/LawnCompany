@@ -13,11 +13,11 @@ export default function Footer() {
             </a>
             <a href="mailto:mike@kerrvillelawn.com" className="flex items-center gap-3 text-[#4a4a4a] hover:text-[#2a2a2a] transition-colors">
               <Mail className="w-4 h-4" />
-              <span>Kerrville Lawn Company</span>
+              <span>mike@kerrvillelawn.com</span>
             </a>
             <div className="flex items-start gap-3 text-[#4a4a4a]">
               <MapPin className="w-4 h-4 mt-1" />
-              <span>112 Holly Hill Dr, Kerrville, TX 78028</span>
+              <span>Kerrville, TX</span>
             </div>
           </div>
         </div>
