@@ -5,7 +5,7 @@ export default function Footer() {
     <footer className="border-t border-[#d0cdc5] px-8 md:px-16 lg:px-32 py-16 bg-[#f5f1e8]">
       <div className="grid md:grid-cols-3 gap-12 mb-12">
         <div>
-          <h3 className="text-2xl font-extralight text-[#5a5a5a] mb-6">Get In Touch</h3>
+          <h3 className="text-2xl font-extralight text-[#5a5a5a] mb-6">Kerrville Lawn Company</h3>
           <div className="space-y-4">
             <a href="tel:+18303830189" className="flex items-center gap-3 text-[#4a4a4a] hover:text-[#2a2a2a] transition-colors">
               <Phone className="w-4 h-4" />
