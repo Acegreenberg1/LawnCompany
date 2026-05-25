@@ -17,7 +17,7 @@ export default function Footer() {
             </a>
             <div className="flex items-start gap-3 text-[#4a4a4a]">
               <MapPin className="w-4 h-4 mt-1" />
-              <span>Kerrville, TX</span>
+              <span>112 Holly Hill Dr, Kerrville, TX 78028</span>
             </div>
           </div>
         </div>
