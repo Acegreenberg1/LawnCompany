@@ -91,13 +91,6 @@ function HomePage() {
             <p className="text-lg text-[#4a4a4a] leading-relaxed mb-12">
               We show up when we say we will, every single time. Your schedule matters, and we respect your time with dependable service.
             </p>
-            <button
-              onClick={() => setIsContactModalOpen(true)}
-              className="group flex items-center gap-2 px-12 py-4 border-2 border-[#d0cdc5] rounded-full text-sm tracking-[0.3em] hover:bg-[#e8e5dd] transition-colors text-black"
-            >
-              VIEW AVAILABILITY
-              <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-            </button>
           </div>
         </div>
       </section>
