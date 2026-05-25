@@ -26,7 +26,7 @@ export default function Footer() {
           <h3 className="text-2xl font-extralight text-[#5a5a5a] mb-6">Services</h3>
           <ul className="space-y-3 text-[#4a4a4a]">
             <li>Lawn Mowing Bundle</li>
-            <li>Commercial Properties</li>
+            <li>Lawn Maintenance</li>
             <li>Weed Eating & Trimming</li>
             <li>Misc. Lawn Care</li>
             <li>Seasonal</li>
