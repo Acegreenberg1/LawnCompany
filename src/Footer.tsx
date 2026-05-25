@@ -29,7 +29,7 @@ export default function Footer() {
             <li>Lawn Maintenance</li>
             <li>Fertilization & Weed Control</li>
             <li>Driveway Pressure Washing</li>
-            <li>Seasonal</li>
+            <li>Gutter Cleaning</li>
           </ul>
         </div>
 
