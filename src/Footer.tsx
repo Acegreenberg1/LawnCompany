@@ -27,7 +27,7 @@ export default function Footer() {
           <ul className="space-y-3 text-[#4a4a4a]">
             <li>Lawn Mowing Bundle</li>
             <li>Lawn Care & Maintenance</li>
-            <li>Fertilization & Weed Control</li>
+            <li>Tree & Hedge Trimming</li>
             <li>Pressure Washing</li>
             <li>Gutter Cleaning</li>
           </ul>
