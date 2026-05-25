@@ -50,7 +50,7 @@ function HomePage() {
               Complete Lawn Mowing Bundle
             </h2>
             <p className="text-lg md:text-xl text-[#4a4a4a] mb-12 leading-relaxed">
-              Our lawn bundle includes mowing, weed eating, and cleanup. We're only satisfied if you're satisfied.
+              Our lawn bundle includes mowing, trimming, edging and cleanup. We're only satisfied if you're satisfied.
             </p>
             <button
               onClick={() => setIsContactModalOpen(true)}
