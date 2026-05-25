@@ -22,7 +22,7 @@ function HomePage() {
           Need A Lawn Care Service in Kerrville?
         </h1>
         <p className="text-xl md:text-2xl text-[#4a4a4a] mb-12 max-w-3xl">
-          We provide top quality lawn care in the Kerrville and Ingram area.
+          We provide top quality lawn care in the Kerrville and Ingram area. Call Kerrville Lawn Company at (830) 383-0189 for a quote on your lawn. 112 Holly Hill Dr, Kerrville, TX 78028
         </p>
         <button
           onClick={() => setIsContactModalOpen(true)}
