@@ -28,7 +28,7 @@ export default function Footer() {
             <li>Lawn Mowing Bundle</li>
             <li>Lawn Maintenance</li>
             <li>Fertilization & Weed Control</li>
-            <li>Misc. Lawn Care</li>
+            <li>Driveway Pressure Washing</li>
             <li>Seasonal</li>
           </ul>
         </div>
