@@ -35,7 +35,7 @@ export default function Services({ onOpenContact }: ServicesProps) {
                 <li className="flex items-start gap-4">
                   <Check className="w-6 h-6 text-[#5a5a5a] flex-shrink-0 mt-1" />
                   <div>
-                    <h4 className="text-lg font-medium text-[#4a4a4a] mb-2">Weed Eating & Trimming</h4>
+                    <h4 className="text-lg font-medium text-[#4a4a4a] mb-2">Trimming & Edging</h4>
                     <p className="text-[#6a6a6a]">Detailed edging around walkways, driveways, and flower beds</p>
                   </div>
                 </li>
