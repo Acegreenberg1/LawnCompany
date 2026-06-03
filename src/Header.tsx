@@ -1,5 +1,5 @@
-import { Menu, X } from 'lucide-react';
-import { useState } from 'react';
+import { Menu, X, ChevronDown } from 'lucide-react';
+import { useState, useRef, useEffect } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
 
 interface HeaderProps {
@@ -10,16 +10,30 @@ interface HeaderProps {
 
 export default function Header({ onOpenContact }: HeaderProps) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [servicesDropdownOpen, setServicesDropdownOpen] = useState(false);
+  const dropdownRef = useRef<HTMLDivElement>(null);
   const navigate = useNavigate();
   const location = useLocation();
 
   const handleNavClick = (path: string) => {
     navigate(path);
     setMobileMenuOpen(false);
+    setServicesDropdownOpen(false);
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
   const isActive = (path: string) => location.pathname === path;
+  const isServicesActive = location.pathname === '/services' || location.pathname === '/services/lawn-mowing-bundle';
+
+  useEffect(() => {
+    function handleClickOutside(e: MouseEvent) {
+      if (dropdownRef.current && !dropdownRef.current.contains(e.target as Node)) {
+        setServicesDropdownOpen(false);
+      }
+    }
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => document.removeEventListener('mousedown', handleClickOutside);
+  }, []);
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-[#f5f1e8]/95 backdrop-blur-sm border-b border-[#d0cdc5]">
@@ -38,23 +52,39 @@ export default function Header({ onOpenContact }: HeaderProps) {
           >
             HOME
           </button>
-          <button
-            onClick={() => handleNavClick('/services')}
-            className={`text-sm tracking-wider hover:text-[#2a2a2a] transition-colors ${isActive('/services') ? 'text-[#2a2a2a]' : ''}`}
-          >
-            SERVICES
-          </button>
+
+          {/* Services with dropdown */}
+          <div className="relative" ref={dropdownRef}>
+            <button
+              onClick={() => setServicesDropdownOpen((o) => !o)}
+              className={`flex items-center gap-1 text-sm tracking-wider hover:text-[#2a2a2a] transition-colors ${isServicesActive ? 'text-[#2a2a2a]' : ''}`}
+            >
+              SERVICES
+              <ChevronDown className={`w-3 h-3 transition-transform ${servicesDropdownOpen ? 'rotate-180' : ''}`} />
+            </button>
+            {servicesDropdownOpen && (
+              <div className="absolute top-full left-0 mt-3 w-56 bg-[#f5f1e8] border border-[#d0cdc5] rounded-lg shadow-sm py-2 z-50">
+                <button
+                  onClick={() => handleNavClick('/services')}
+                  className={`w-full text-left px-5 py-3 text-xs tracking-wider hover:bg-[#e8e5dd] transition-colors ${isActive('/services') ? 'text-[#2a2a2a]' : 'text-[#4a4a4a]'}`}
+                >
+                  ALL SERVICES
+                </button>
+                <button
+                  onClick={() => handleNavClick('/services/lawn-mowing-bundle')}
+                  className={`w-full text-left px-5 py-3 text-xs tracking-wider hover:bg-[#e8e5dd] transition-colors ${isActive('/services/lawn-mowing-bundle') ? 'text-[#2a2a2a]' : 'text-[#4a4a4a]'}`}
+                >
+                  LAWN MOWING BUNDLE
+                </button>
+              </div>
+            )}
+          </div>
+
           <button
             onClick={() => handleNavClick('/about')}
             className={`text-sm tracking-wider hover:text-[#2a2a2a] transition-colors ${isActive('/about') ? 'text-[#2a2a2a]' : ''}`}
           >
             ABOUT
-          </button>
-          <button
-            onClick={() => handleNavClick('/services/lawn-mowing-bundle')}
-            className={`text-sm tracking-wider hover:text-[#2a2a2a] transition-colors ${isActive('/services/lawn-mowing-bundle') ? 'text-[#2a2a2a]' : ''}`}
-          >
-            MOWING BUNDLE
           </button>
           <button
             onClick={onOpenContact}
@@ -87,16 +117,16 @@ export default function Header({ onOpenContact }: HeaderProps) {
             SERVICES
           </button>
           <button
+            onClick={() => handleNavClick('/services/lawn-mowing-bundle')}
+            className={`text-sm tracking-wider hover:text-[#2a2a2a] transition-colors text-left pl-4 ${isActive('/services/lawn-mowing-bundle') ? 'text-[#2a2a2a]' : 'text-[#6a6a6a]'}`}
+          >
+            ↳ LAWN MOWING BUNDLE
+          </button>
+          <button
             onClick={() => handleNavClick('/about')}
             className={`text-sm tracking-wider hover:text-[#2a2a2a] transition-colors text-left ${isActive('/about') ? 'text-[#2a2a2a]' : ''}`}
           >
             ABOUT
-          </button>
-          <button
-            onClick={() => handleNavClick('/services/lawn-mowing-bundle')}
-            className={`text-sm tracking-wider hover:text-[#2a2a2a] transition-colors text-left ${isActive('/services/lawn-mowing-bundle') ? 'text-[#2a2a2a]' : ''}`}
-          >
-            MOWING BUNDLE
           </button>
           <button
             onClick={() => {
