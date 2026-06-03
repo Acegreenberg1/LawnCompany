@@ -7,6 +7,7 @@ import Services from './Services';
 import About from './About';
 import ContactModal from './ContactModal';
 import Contact from './Contact';
+import LawnMowingBundle from './LawnMowingBundle';
 
 function HomePage() {
   const [isContactModalOpen, setIsContactModalOpen] = useState(false);
@@ -199,11 +200,24 @@ function AboutPage() {
   );
 }
 
+function LawnMowingBundlePage() {
+  const [isContactModalOpen, setIsContactModalOpen] = useState(false);
+  return (
+    <>
+      <Header onNavigate={() => {}} currentPage="services" onOpenContact={() => setIsContactModalOpen(true)} />
+      <LawnMowingBundle onOpenContact={() => setIsContactModalOpen(true)} />
+      <Footer />
+      <ContactModal isOpen={isContactModalOpen} onClose={() => setIsContactModalOpen(false)} />
+    </>
+  );
+}
+
 function App() {
   return (
     <Routes>
       <Route path="/" element={<HomePage />} />
       <Route path="/services" element={<ServicesPage />} />
+      <Route path="/services/lawn-mowing-bundle" element={<LawnMowingBundlePage />} />
       <Route path="/about" element={<AboutPage />} />
       <Route path="/contact" element={<Contact onNavigate={() => {}} onOpenContact={() => {}} />} />
     </Routes>
