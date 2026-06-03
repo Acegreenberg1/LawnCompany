@@ -127,12 +127,6 @@ export default function Services({ onOpenContact }: ServicesProps) {
       <section className="min-h-screen flex flex-col justify-center px-8 md:px-16 lg:px-32 py-16">
         <div className="max-w-5xl mx-auto text-center mb-16">
           <p className="text-sm tracking-[0.3em] text-[#8a8a8a] mb-6">ADDITIONAL SERVICES</p>
-          <h2 className="text-5xl md:text-6xl lg:text-7xl font-extralight text-[#5a5a5a] mb-8 leading-tight">
-            Need Something Else?
-          </h2>
-          <p className="text-xl md:text-2xl text-[#4a4a4a] leading-relaxed mb-12">
-            We understand every property is unique. If you need yard work that isn't part of our lawn mowing bundle, just ask.
-          </p>
         </div>
 
         {/* Additional Services Grid */}
