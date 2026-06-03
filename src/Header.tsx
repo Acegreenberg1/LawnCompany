@@ -23,7 +23,10 @@ export default function Header({ onOpenContact }: HeaderProps) {
   };
 
   const isActive = (path: string) => location.pathname === path;
-  const isServicesActive = location.pathname === '/services' || location.pathname === '/services/lawn-mowing-bundle';
+  const isServicesActive =
+    location.pathname === '/services' ||
+    location.pathname === '/services/lawn-mowing-bundle' ||
+    location.pathname === '/services/lawn-care-maintenance';
 
   useEffect(() => {
     function handleClickOutside(e: MouseEvent) {
@@ -76,6 +79,12 @@ export default function Header({ onOpenContact }: HeaderProps) {
                 >
                   LAWN MOWING BUNDLE
                 </button>
+                <button
+                  onClick={() => handleNavClick('/services/lawn-care-maintenance')}
+                  className={`w-full text-left px-5 py-3 text-xs tracking-wider hover:bg-[#e8e5dd] transition-colors ${isActive('/services/lawn-care-maintenance') ? 'text-[#2a2a2a]' : 'text-[#4a4a4a]'}`}
+                >
+                  LAWN CARE & MAINTENANCE
+                </button>
               </div>
             )}
           </div>
@@ -121,6 +130,12 @@ export default function Header({ onOpenContact }: HeaderProps) {
             className={`text-sm tracking-wider hover:text-[#2a2a2a] transition-colors text-left pl-4 ${isActive('/services/lawn-mowing-bundle') ? 'text-[#2a2a2a]' : 'text-[#6a6a6a]'}`}
           >
             ↳ LAWN MOWING BUNDLE
+          </button>
+          <button
+            onClick={() => handleNavClick('/services/lawn-care-maintenance')}
+            className={`text-sm tracking-wider hover:text-[#2a2a2a] transition-colors text-left pl-4 ${isActive('/services/lawn-care-maintenance') ? 'text-[#2a2a2a]' : 'text-[#6a6a6a]'}`}
+          >
+            ↳ LAWN CARE & MAINTENANCE
           </button>
           <button
             onClick={() => handleNavClick('/about')}
