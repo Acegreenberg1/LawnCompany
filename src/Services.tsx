@@ -1,4 +1,4 @@
-import { ArrowRight, Check, MessageCircle } from 'lucide-react';
+import { ArrowRight, Check } from 'lucide-react';
 
 interface ServicesProps {
   onOpenContact: () => void;
@@ -127,12 +127,6 @@ export default function Services({ onOpenContact }: ServicesProps) {
       <section className="min-h-screen flex flex-col justify-center px-8 md:px-16 lg:px-32 py-16">
         <div className="max-w-5xl mx-auto text-center mb-16">
           <p className="text-sm tracking-[0.3em] text-[#8a8a8a] mb-6">ADDITIONAL SERVICES</p>
-          <h2 className="text-5xl md:text-6xl lg:text-7xl font-extralight text-[#5a5a5a] mb-8 leading-tight">
-            Need Something Else?
-          </h2>
-          <p className="text-xl md:text-2xl text-[#4a4a4a] leading-relaxed mb-12">
-            We understand every property is unique. If you need yard work that isn't part of our lawn mowing bundle, just ask.
-          </p>
         </div>
 
         {/* Additional Services Grid */}
@@ -175,32 +169,6 @@ export default function Services({ onOpenContact }: ServicesProps) {
             <p className="text-[#4a4a4a] leading-relaxed">
               Restore driveways, patios, sidewalks, and fences to like-new condition with thorough pressure washing that removes dirt, grime, and built-up stains.
             </p>
-          </div>
-        </div>
-
-        {/* Custom Work CTA */}
-        <div className="bg-[#e8e5dd] p-12 md:p-16 rounded-lg max-w-5xl mx-auto">
-          <div className="flex flex-col md:flex-row items-center gap-8">
-            <div className="flex-shrink-0">
-              <MessageCircle className="w-16 h-16 text-[#5a5a5a]" />
-            </div>
-            <div className="flex-1 text-center md:text-left">
-              <h3 className="text-3xl md:text-4xl font-extralight text-[#5a5a5a] mb-4">
-                Don't See What You Need?
-              </h3>
-              <p className="text-lg text-[#4a4a4a] leading-relaxed mb-6">
-                We're happy to discuss custom lawn care and property maintenance projects. Whether it's a one-time job or ongoing work, reach out and let's talk about how we can help.
-              </p>
-            </div>
-            <div>
-              <button
-                onClick={onOpenContact}
-                className="group flex items-center gap-2 px-10 py-4 border-2 border-[#d0cdc5] rounded-full text-sm tracking-[0.3em] hover:bg-[#d8d5cd] transition-colors text-black bg-[#f5f1e8] whitespace-nowrap"
-              >
-                CONTACT US
-                <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-              </button>
-            </div>
           </div>
         </div>
 
