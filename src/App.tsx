@@ -7,6 +7,7 @@ import Services from './Services';
 import About from './About';
 import ContactModal from './ContactModal';
 import Contact from './Contact';
+import LawnMowingBundlePage from './LawnMowingBundle';
 
 function HomePage() {
   const [isContactModalOpen, setIsContactModalOpen] = useState(false);
@@ -206,6 +207,7 @@ function App() {
       <Route path="/services" element={<ServicesPage />} />
       <Route path="/about" element={<AboutPage />} />
       <Route path="/contact" element={<Contact onNavigate={() => {}} onOpenContact={() => {}} />} />
+      <Route path="/services/lawn-mowing-bundle" element={<LawnMowingBundlePage />} />
     </Routes>
   );
 }

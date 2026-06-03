@@ -51,6 +51,12 @@ export default function Header({ onOpenContact }: HeaderProps) {
             ABOUT
           </button>
           <button
+            onClick={() => handleNavClick('/services/lawn-mowing-bundle')}
+            className={`text-sm tracking-wider hover:text-[#2a2a2a] transition-colors ${isActive('/services/lawn-mowing-bundle') ? 'text-[#2a2a2a]' : ''}`}
+          >
+            MOWING BUNDLE
+          </button>
+          <button
             onClick={onOpenContact}
             className="px-6 py-2 border border-[#d0cdc5] rounded-full text-xs tracking-wider hover:bg-[#e8e5dd] transition-colors"
           >
@@ -85,6 +91,12 @@ export default function Header({ onOpenContact }: HeaderProps) {
             className={`text-sm tracking-wider hover:text-[#2a2a2a] transition-colors text-left ${isActive('/about') ? 'text-[#2a2a2a]' : ''}`}
           >
             ABOUT
+          </button>
+          <button
+            onClick={() => handleNavClick('/services/lawn-mowing-bundle')}
+            className={`text-sm tracking-wider hover:text-[#2a2a2a] transition-colors text-left ${isActive('/services/lawn-mowing-bundle') ? 'text-[#2a2a2a]' : ''}`}
+          >
+            MOWING BUNDLE
           </button>
           <button
             onClick={() => {
