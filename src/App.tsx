@@ -12,6 +12,7 @@ import LawnCareMaintenancePage from './LawnCareMaintenance';
 import TreeHedgeTrimmingPage from './TreeHedgeTrimming';
 import SodInstallationPage from './SodInstallation';
 import MulchInstallationPage from './MulchInstallation';
+import ServiceAreasPage from './ServiceAreas';
 
 function HomePage() {
   const [isContactModalOpen, setIsContactModalOpen] = useState(false);
@@ -216,6 +217,7 @@ function App() {
       <Route path="/services/tree-hedge-trimming" element={<TreeHedgeTrimmingPage />} />
       <Route path="/services/sod-installation" element={<SodInstallationPage />} />
       <Route path="/services/mulch-installation" element={<MulchInstallationPage />} />
+      <Route path="/service-areas" element={<ServiceAreasPage />} />
     </Routes>
   );
 }

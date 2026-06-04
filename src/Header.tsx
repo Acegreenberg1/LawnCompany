@@ -110,6 +110,12 @@ export default function Header({ onOpenContact }: HeaderProps) {
           </div>
 
           <button
+            onClick={() => handleNavClick('/service-areas')}
+            className={`text-sm tracking-wider hover:text-[#2a2a2a] transition-colors ${isActive('/service-areas') ? 'text-[#2a2a2a]' : ''}`}
+          >
+            AREAS
+          </button>
+          <button
             onClick={() => handleNavClick('/about')}
             className={`text-sm tracking-wider hover:text-[#2a2a2a] transition-colors ${isActive('/about') ? 'text-[#2a2a2a]' : ''}`}
           >
@@ -174,6 +180,12 @@ export default function Header({ onOpenContact }: HeaderProps) {
             className={`text-sm tracking-wider hover:text-[#2a2a2a] transition-colors text-left pl-4 ${isActive('/services/mulch-installation') ? 'text-[#2a2a2a]' : 'text-[#6a6a6a]'}`}
           >
             ↳ MULCH INSTALLATION
+          </button>
+          <button
+            onClick={() => handleNavClick('/service-areas')}
+            className={`text-sm tracking-wider hover:text-[#2a2a2a] transition-colors text-left ${isActive('/service-areas') ? 'text-[#2a2a2a]' : ''}`}
+          >
+            AREAS
           </button>
           <button
             onClick={() => handleNavClick('/about')}
