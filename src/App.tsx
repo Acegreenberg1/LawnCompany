@@ -9,6 +9,7 @@ import ContactModal from './ContactModal';
 import Contact from './Contact';
 import LawnMowingBundlePage from './LawnMowingBundle';
 import LawnCareMaintenancePage from './LawnCareMaintenance';
+import TreeHedgeTrimmingPage from './TreeHedgeTrimming';
 
 function HomePage() {
   const [isContactModalOpen, setIsContactModalOpen] = useState(false);
@@ -210,6 +211,7 @@ function App() {
       <Route path="/contact" element={<Contact onNavigate={() => {}} onOpenContact={() => {}} />} />
       <Route path="/services/lawn-mowing-bundle" element={<LawnMowingBundlePage />} />
       <Route path="/services/lawn-care-maintenance" element={<LawnCareMaintenancePage />} />
+      <Route path="/services/tree-hedge-trimming" element={<TreeHedgeTrimmingPage />} />
     </Routes>
   );
 }
