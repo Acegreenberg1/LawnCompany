@@ -11,6 +11,7 @@ import LawnMowingBundlePage from './LawnMowingBundle';
 import LawnCareMaintenancePage from './LawnCareMaintenance';
 import TreeHedgeTrimmingPage from './TreeHedgeTrimming';
 import SodInstallationPage from './SodInstallation';
+import MulchInstallationPage from './MulchInstallation';
 
 function HomePage() {
   const [isContactModalOpen, setIsContactModalOpen] = useState(false);
@@ -214,6 +215,7 @@ function App() {
       <Route path="/services/lawn-care-maintenance" element={<LawnCareMaintenancePage />} />
       <Route path="/services/tree-hedge-trimming" element={<TreeHedgeTrimmingPage />} />
       <Route path="/services/sod-installation" element={<SodInstallationPage />} />
+      <Route path="/services/mulch-installation" element={<MulchInstallationPage />} />
     </Routes>
   );
 }
