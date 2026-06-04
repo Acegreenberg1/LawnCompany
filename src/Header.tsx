@@ -58,23 +58,22 @@ export default function Header({ onOpenContact }: HeaderProps) {
             HOME
           </button>
 
-          {/* Services with dropdown */}
-          <div className="relative" ref={dropdownRef}>
+          {/* Services with hover dropdown */}
+          <div
+            className="relative"
+            ref={dropdownRef}
+            onMouseEnter={() => setServicesDropdownOpen(true)}
+            onMouseLeave={() => setServicesDropdownOpen(false)}
+          >
             <button
-              onClick={() => setServicesDropdownOpen((o) => !o)}
+              onClick={() => handleNavClick('/services')}
               className={`flex items-center gap-1 text-sm tracking-wider hover:text-[#2a2a2a] transition-colors ${isServicesActive ? 'text-[#2a2a2a]' : ''}`}
             >
               SERVICES
               <ChevronDown className={`w-3 h-3 transition-transform ${servicesDropdownOpen ? 'rotate-180' : ''}`} />
             </button>
             {servicesDropdownOpen && (
-              <div className="absolute top-full left-0 mt-3 w-56 bg-[#f5f1e8] border border-[#d0cdc5] rounded-lg shadow-sm py-2 z-50">
-                <button
-                  onClick={() => handleNavClick('/services')}
-                  className={`w-full text-left px-5 py-3 text-xs tracking-wider hover:bg-[#e8e5dd] transition-colors ${isActive('/services') ? 'text-[#2a2a2a]' : 'text-[#4a4a4a]'}`}
-                >
-                  ALL SERVICES
-                </button>
+              <div className="absolute top-full left-0 mt-0 w-56 bg-[#f5f1e8] border border-[#d0cdc5] rounded-lg shadow-sm py-2 z-50">
                 <button
                   onClick={() => handleNavClick('/services/lawn-mowing-bundle')}
                   className={`w-full text-left px-5 py-3 text-xs tracking-wider hover:bg-[#e8e5dd] transition-colors ${isActive('/services/lawn-mowing-bundle') ? 'text-[#2a2a2a]' : 'text-[#4a4a4a]'}`}
