@@ -28,8 +28,8 @@ export default function Footer() {
             <li>Lawn Mowing Bundle</li>
             <li>Lawn Care & Maintenance</li>
             <li>Tree & Hedge Trimming</li>
-            <li>Pressure Washing</li>
-            <li>Gutter Cleaning</li>
+            <li>Sod Installation</li>
+            <li>Mulch Installation</li>
           </ul>
         </div>
 
