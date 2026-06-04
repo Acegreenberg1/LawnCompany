@@ -11,9 +11,7 @@ interface HeaderProps {
 export default function Header({ onOpenContact }: HeaderProps) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [servicesDropdownOpen, setServicesDropdownOpen] = useState(false);
-  const [areasDropdownOpen, setAreasDropdownOpen] = useState(false);
-  const servicesDropdownRef = useRef<HTMLDivElement>(null);
-  const areasDropdownRef = useRef<HTMLDivElement>(null);
+  const dropdownRef = useRef<HTMLDivElement>(null);
   const navigate = useNavigate();
   const location = useLocation();
 
@@ -21,7 +19,6 @@ export default function Header({ onOpenContact }: HeaderProps) {
     navigate(path);
     setMobileMenuOpen(false);
     setServicesDropdownOpen(false);
-    setAreasDropdownOpen(false);
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
@@ -33,17 +30,11 @@ export default function Header({ onOpenContact }: HeaderProps) {
     location.pathname === '/services/tree-hedge-trimming' ||
     location.pathname === '/services/sod-installation' ||
     location.pathname === '/services/mulch-installation';
-  const isAreasActive =
-    location.pathname === '/service-areas' ||
-    location.pathname === '/areas/kerrville';
 
   useEffect(() => {
     function handleClickOutside(e: MouseEvent) {
-      if (servicesDropdownRef.current && !servicesDropdownRef.current.contains(e.target as Node)) {
+      if (dropdownRef.current && !dropdownRef.current.contains(e.target as Node)) {
         setServicesDropdownOpen(false);
-      }
-      if (areasDropdownRef.current && !areasDropdownRef.current.contains(e.target as Node)) {
-        setAreasDropdownOpen(false);
       }
     }
     document.addEventListener('mousedown', handleClickOutside);
@@ -71,7 +62,7 @@ export default function Header({ onOpenContact }: HeaderProps) {
           {/* Services with hover dropdown */}
           <div
             className="relative"
-            ref={servicesDropdownRef}
+            ref={dropdownRef}
             onMouseEnter={() => setServicesDropdownOpen(true)}
             onMouseLeave={() => setServicesDropdownOpen(false)}
           >
@@ -118,37 +109,12 @@ export default function Header({ onOpenContact }: HeaderProps) {
             )}
           </div>
 
-          {/* Areas with hover dropdown */}
-          <div
-            className="relative"
-            ref={areasDropdownRef}
-            onMouseEnter={() => setAreasDropdownOpen(true)}
-            onMouseLeave={() => setAreasDropdownOpen(false)}
+          <button
+            onClick={() => handleNavClick('/service-areas')}
+            className={`text-sm tracking-wider hover:text-[#2a2a2a] transition-colors ${isActive('/service-areas') ? 'text-[#2a2a2a]' : ''}`}
           >
-            <button
-              onClick={() => handleNavClick('/service-areas')}
-              className={`flex items-center gap-1 text-sm tracking-wider hover:text-[#2a2a2a] transition-colors ${isAreasActive ? 'text-[#2a2a2a]' : ''}`}
-            >
-              AREAS
-              <ChevronDown className={`w-3 h-3 transition-transform ${areasDropdownOpen ? 'rotate-180' : ''}`} />
-            </button>
-            {areasDropdownOpen && (
-              <div className="absolute top-full left-0 mt-0 w-52 bg-[#f5f1e8] border border-[#d0cdc5] rounded-lg shadow-sm py-2 z-50">
-                <button
-                  onClick={() => handleNavClick('/service-areas')}
-                  className={`w-full text-left px-5 py-3 text-xs tracking-wider hover:bg-[#e8e5dd] transition-colors ${isActive('/service-areas') ? 'text-[#2a2a2a]' : 'text-[#4a4a4a]'}`}
-                >
-                  ALL AREAS
-                </button>
-                <button
-                  onClick={() => handleNavClick('/areas/kerrville')}
-                  className={`w-full text-left px-5 py-3 text-xs tracking-wider hover:bg-[#e8e5dd] transition-colors ${isActive('/areas/kerrville') ? 'text-[#2a2a2a]' : 'text-[#4a4a4a]'}`}
-                >
-                  KERRVILLE
-                </button>
-              </div>
-            )}
-          </div>
+            AREAS
+          </button>
           <button
             onClick={() => handleNavClick('/about')}
             className={`text-sm tracking-wider hover:text-[#2a2a2a] transition-colors ${isActive('/about') ? 'text-[#2a2a2a]' : ''}`}
@@ -220,12 +186,6 @@ export default function Header({ onOpenContact }: HeaderProps) {
             className={`text-sm tracking-wider hover:text-[#2a2a2a] transition-colors text-left ${isActive('/service-areas') ? 'text-[#2a2a2a]' : ''}`}
           >
             AREAS
-          </button>
-          <button
-            onClick={() => handleNavClick('/areas/kerrville')}
-            className={`text-sm tracking-wider hover:text-[#2a2a2a] transition-colors text-left pl-4 ${isActive('/areas/kerrville') ? 'text-[#2a2a2a]' : 'text-[#6a6a6a]'}`}
-          >
-            ↳ KERRVILLE
           </button>
           <button
             onClick={() => handleNavClick('/about')}
