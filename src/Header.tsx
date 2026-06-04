@@ -27,7 +27,8 @@ export default function Header({ onOpenContact }: HeaderProps) {
     location.pathname === '/services' ||
     location.pathname === '/services/lawn-mowing-bundle' ||
     location.pathname === '/services/lawn-care-maintenance' ||
-    location.pathname === '/services/tree-hedge-trimming';
+    location.pathname === '/services/tree-hedge-trimming' ||
+    location.pathname === '/services/sod-installation';
 
   useEffect(() => {
     function handleClickOutside(e: MouseEvent) {
@@ -92,6 +93,12 @@ export default function Header({ onOpenContact }: HeaderProps) {
                 >
                   TREE & HEDGE TRIMMING
                 </button>
+                <button
+                  onClick={() => handleNavClick('/services/sod-installation')}
+                  className={`w-full text-left px-5 py-3 text-xs tracking-wider hover:bg-[#e8e5dd] transition-colors ${isActive('/services/sod-installation') ? 'text-[#2a2a2a]' : 'text-[#4a4a4a]'}`}
+                >
+                  SOD INSTALLATION
+                </button>
               </div>
             )}
           </div>
@@ -149,6 +156,12 @@ export default function Header({ onOpenContact }: HeaderProps) {
             className={`text-sm tracking-wider hover:text-[#2a2a2a] transition-colors text-left pl-4 ${isActive('/services/tree-hedge-trimming') ? 'text-[#2a2a2a]' : 'text-[#6a6a6a]'}`}
           >
             ↳ TREE & HEDGE TRIMMING
+          </button>
+          <button
+            onClick={() => handleNavClick('/services/sod-installation')}
+            className={`text-sm tracking-wider hover:text-[#2a2a2a] transition-colors text-left pl-4 ${isActive('/services/sod-installation') ? 'text-[#2a2a2a]' : 'text-[#6a6a6a]'}`}
+          >
+            ↳ SOD INSTALLATION
           </button>
           <button
             onClick={() => handleNavClick('/about')}
