@@ -450,5 +450,4 @@ export default function ServiceAreasPage() {
   );
 }
 
-
 export default ServiceAreasPage
