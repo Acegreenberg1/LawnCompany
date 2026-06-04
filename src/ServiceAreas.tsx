@@ -74,7 +74,6 @@ function FAQItem({ q, a, isOpen, onToggle }: { q: string; a: string; isOpen: boo
 const areas = [
   {
     name: 'Kerrville',
-    pageLink: '/service-areas/kerrville',
     tag: 'OUR HOME BASE',
     intro: 'Kerrville is where we are rooted -- literally. Our shop is at 112 Holly Hill Dr, which means we are familiar with every part of the city: the established neighborhoods east of downtown near Tivy High School, the river-adjacent properties along the Guadalupe, the hillside homes above town with their sloped, rocky lots, and the newer subdivisions developing on the city\'s edges. Kerrville lawns face the full range of Hill Country challenges -- alkaline, rocky soil, summer heat that punishes grass not adapted to it, and winter freezes that can set back warm-season turf. We understand all of it from working here every week of the growing season.',
     services: [
@@ -273,24 +272,13 @@ export default function ServiceAreasPage() {
 
                 <p className="text-[#4a4a4a] leading-relaxed mb-8 text-base">{area.detail}</p>
 
-                <div className="flex flex-wrap gap-3">
-                  <button
-                    onClick={() => setIsContactModalOpen(true)}
-                    className="group flex items-center gap-2 px-8 py-3 border border-[#d0cdc5] rounded-full text-xs tracking-[0.25em] hover:bg-[#d8d5cd] transition-colors text-black bg-transparent"
-                  >
-                    GET A QUOTE FOR {area.name.toUpperCase()}
-                    <ArrowRight className="w-3 h-3 group-hover:translate-x-1 transition-transform" />
-                  </button>
-                  {area.pageLink && (
-                    <Link
-                      to={area.pageLink}
-                      className="group flex items-center gap-2 px-8 py-3 border border-[#d0cdc5] rounded-full text-xs tracking-[0.25em] hover:bg-[#d8d5cd] transition-colors text-[#4a4a4a]"
-                    >
-                      LEARN MORE
-                      <ArrowRight className="w-3 h-3 group-hover:translate-x-1 transition-transform" />
-                    </Link>
-                  )}
-                </div>
+                <button
+                  onClick={() => setIsContactModalOpen(true)}
+                  className="group flex items-center gap-2 px-8 py-3 border border-[#d0cdc5] rounded-full text-xs tracking-[0.25em] hover:bg-[#d8d5cd] transition-colors text-black bg-transparent"
+                >
+                  GET A QUOTE FOR {area.name.toUpperCase()}
+                  <ArrowRight className="w-3 h-3 group-hover:translate-x-1 transition-transform" />
+                </button>
               </div>
 
               <div className={`w-full h-80 md:h-96 rounded-lg overflow-hidden ${idx % 2 !== 0 ? 'lg:col-start-1' : ''}`}>
@@ -449,5 +437,3 @@ export default function ServiceAreasPage() {
     </div>
   );
 }
-
-export default ServiceAreasPage
