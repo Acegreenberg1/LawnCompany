@@ -14,6 +14,7 @@ import SodInstallationPage from './SodInstallation';
 import MulchInstallationPage from './MulchInstallation';
 import ServiceAreasPage from './ServiceAreas';
 import KerrvillePage from './KerrvillePage';
+import IngramPage from './IngramPage';
 
 function HomePage() {
   const [isContactModalOpen, setIsContactModalOpen] = useState(false);
@@ -220,6 +221,7 @@ function App() {
       <Route path="/services/mulch-installation" element={<MulchInstallationPage />} />
       <Route path="/service-areas" element={<ServiceAreasPage />} />
       <Route path="/service-areas/kerrville" element={<KerrvillePage />} />
+      <Route path="/service-areas/ingram" element={<IngramPage />} />
     </Routes>
   );
 }
