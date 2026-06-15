@@ -164,7 +164,7 @@ export default function KerrvillePage() {
                 Homes on the ridgelines above Tivy High School have the thin, rocky soil over caliche that is almost universal at elevation in Kerr County. We maintain properties in all of these contexts and bring the right approach to each one.
               </p>
               <p>
-                Kerrville lawns face the full range of Hill Country challenges -- alkaline, rocky soil, summer heat that punishes grass not adapted to it, and winter freezes that can set back warm-season turf. We understand all of it from working here every week of the growing season.
+                <Link to="/services/lawn-mowing-bundle" className="underline underline-offset-2 hover:text-[#2a2a2a] transition-colors">Kerrville lawns</Link> face the full range of Hill Country challenges -- alkaline, rocky soil, summer heat that punishes grass not adapted to it, and winter freezes that can set back warm-season turf. We understand all of it from working here every week of the growing season.
               </p>
             </div>
           </div>
