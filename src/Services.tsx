@@ -1,4 +1,5 @@
 import { ArrowRight, Check, MessageCircle } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 interface ServicesProps {
   onOpenContact: () => void;
@@ -12,9 +13,12 @@ export default function Services({ onOpenContact }: ServicesProps) {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <p className="text-sm tracking-[0.3em] text-[#8a8a8a] mb-4">FEATURED SERVICE</p>
-            <h2 className="text-5xl md:text-6xl lg:text-7xl font-extralight text-[#5a5a5a] mb-6 leading-tight">
+            <Link
+              to="/services/lawn-mowing-bundle"
+              className="group inline-block text-5xl md:text-6xl lg:text-7xl font-extralight text-[#5a5a5a] mb-6 leading-tight hover:text-[#3a3a3a] transition-colors"
+            >
               Complete Lawn Mowing Bundle
-            </h2>
+            </Link>
             <p className="text-xl md:text-2xl text-[#4a4a4a] max-w-3xl mx-auto leading-relaxed">
               Everything you need for a perfectly maintained lawn, bundled into one comprehensive service
             </p>
@@ -131,45 +135,57 @@ export default function Services({ onOpenContact }: ServicesProps) {
 
         {/* Additional Services Grid */}
         <div className="grid md:grid-cols-2 gap-8 mb-16 max-w-6xl mx-auto">
-          <div className="bg-[#e8e5dd] p-10 rounded-lg flex flex-col gap-4">
+          <Link to="/services/lawn-care-maintenance" className="group bg-[#e8e5dd] p-10 rounded-lg flex flex-col gap-4 hover:bg-[#dedad1] transition-colors">
             <div className="w-10 h-10 rounded-full bg-[#d0cdc5] flex items-center justify-center flex-shrink-0">
               <svg className="w-5 h-5 text-[#5a5a5a]" fill="none" stroke="currentColor" strokeWidth="1.5" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M12 3C7 3 3 8 3 13a9 9 0 0018 0c0-5-4-10-9-10z" /><path strokeLinecap="round" strokeLinejoin="round" d="M12 3v10m0 0l-3-3m3 3l3-3" /></svg>
             </div>
-            <h3 className="text-2xl font-extralight text-[#5a5a5a]">Lawn Care & Maintenance</h3>
+            <h3 className="text-2xl font-extralight text-[#5a5a5a] group-hover:text-[#3a3a3a] transition-colors">Lawn Care & Maintenance</h3>
             <p className="text-[#4a4a4a] leading-relaxed">
               Full-service lawn care including mowing, fertilizing, weed control, and seasonal treatments to keep your grass healthy and green all year long.
             </p>
-          </div>
+            <div className="flex items-center gap-1 text-xs tracking-[0.2em] text-[#8a8a8a] group-hover:text-[#4a4a4a] transition-colors mt-auto">
+              LEARN MORE <ArrowRight className="w-3 h-3 group-hover:translate-x-1 transition-transform" />
+            </div>
+          </Link>
 
-          <div className="bg-[#e8e5dd] p-10 rounded-lg flex flex-col gap-4">
+          <Link to="/services/tree-hedge-trimming" className="group bg-[#e8e5dd] p-10 rounded-lg flex flex-col gap-4 hover:bg-[#dedad1] transition-colors">
             <div className="w-10 h-10 rounded-full bg-[#d0cdc5] flex items-center justify-center flex-shrink-0">
               <svg className="w-5 h-5 text-[#5a5a5a]" fill="none" stroke="currentColor" strokeWidth="1.5" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M9.5 3L7 8H4l4 4-1.5 5L12 14l5.5 3L16 12l4-4h-3L14.5 3 12 7.5 9.5 3z" /></svg>
             </div>
-            <h3 className="text-2xl font-extralight text-[#5a5a5a]">Tree & Hedge Trimming</h3>
+            <h3 className="text-2xl font-extralight text-[#5a5a5a] group-hover:text-[#3a3a3a] transition-colors">Tree & Hedge Trimming</h3>
             <p className="text-[#4a4a4a] leading-relaxed">
               Professional shaping and pruning of trees, shrubs, and hedges to enhance curb appeal and encourage healthy growth throughout the seasons.
             </p>
-          </div>
+            <div className="flex items-center gap-1 text-xs tracking-[0.2em] text-[#8a8a8a] group-hover:text-[#4a4a4a] transition-colors mt-auto">
+              LEARN MORE <ArrowRight className="w-3 h-3 group-hover:translate-x-1 transition-transform" />
+            </div>
+          </Link>
 
-          <div className="bg-[#e8e5dd] p-10 rounded-lg flex flex-col gap-4">
+          <Link to="/services/sod-installation" className="group bg-[#e8e5dd] p-10 rounded-lg flex flex-col gap-4 hover:bg-[#dedad1] transition-colors">
             <div className="w-10 h-10 rounded-full bg-[#d0cdc5] flex items-center justify-center flex-shrink-0">
               <svg className="w-5 h-5 text-[#5a5a5a]" fill="none" stroke="currentColor" strokeWidth="1.5" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M3 17h18M5 17V9a2 2 0 012-2h10a2 2 0 012 2v8" /><path strokeLinecap="round" strokeLinejoin="round" d="M9 17V11h6v6" /></svg>
             </div>
-            <h3 className="text-2xl font-extralight text-[#5a5a5a]">Sod Installation</h3>
+            <h3 className="text-2xl font-extralight text-[#5a5a5a] group-hover:text-[#3a3a3a] transition-colors">Sod Installation</h3>
             <p className="text-[#4a4a4a] leading-relaxed">
               Transform bare or patchy areas into lush, uniform turf with expert sod installation. We prepare the ground, lay the sod, and leave you with an instantly beautiful lawn.
             </p>
-          </div>
-
-          <div className="bg-[#e8e5dd] p-10 rounded-lg flex flex-col gap-4">
-            <div className="w-10 h-10 rounded-full bg-[#d0cdc5] flex items-center justify-center flex-shrink-0">
-              <svg className="w-5 h-5 text-[#5a5a5a]" fill="none" stroke="currentColor" strokeWidth="1.5" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M6 18L4 6h16l-2 12H6z" /><path strokeLinecap="round" strokeLinejoin="round" d="M9 6V4a1 1 0 011-1h4a1 1 0 011 1v2" /><path strokeLinecap="round" strokeLinejoin="round" d="M12 10v4m-2-2h4" /></svg>
+            <div className="flex items-center gap-1 text-xs tracking-[0.2em] text-[#8a8a8a] group-hover:text-[#4a4a4a] transition-colors mt-auto">
+              LEARN MORE <ArrowRight className="w-3 h-3 group-hover:translate-x-1 transition-transform" />
             </div>
-            <h3 className="text-2xl font-extralight text-[#5a5a5a]">Pressure Washing</h3>
+          </Link>
+
+          <Link to="/services/mulch-installation" className="group bg-[#e8e5dd] p-10 rounded-lg flex flex-col gap-4 hover:bg-[#dedad1] transition-colors">
+            <div className="w-10 h-10 rounded-full bg-[#d0cdc5] flex items-center justify-center flex-shrink-0">
+              <svg className="w-5 h-5 text-[#5a5a5a]" fill="none" stroke="currentColor" strokeWidth="1.5" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M3 7h18M3 12h18M3 17h18" /><path strokeLinecap="round" strokeLinejoin="round" d="M5 7V5a2 2 0 014 0v2M15 7V5a2 2 0 014 0v2" /></svg>
+            </div>
+            <h3 className="text-2xl font-extralight text-[#5a5a5a] group-hover:text-[#3a3a3a] transition-colors">Mulch Installation</h3>
             <p className="text-[#4a4a4a] leading-relaxed">
-              Restore driveways, patios, sidewalks, and fences to like-new condition with thorough pressure washing that removes dirt, grime, and built-up stains.
+              Freshen landscape beds with professional mulch installation. We clear and prep beds, choose the right material for your plantings, and leave a clean, finished look.
             </p>
-          </div>
+            <div className="flex items-center gap-1 text-xs tracking-[0.2em] text-[#8a8a8a] group-hover:text-[#4a4a4a] transition-colors mt-auto">
+              LEARN MORE <ArrowRight className="w-3 h-3 group-hover:translate-x-1 transition-transform" />
+            </div>
+          </Link>
         </div>
 
         {/* Custom Work CTA */}
