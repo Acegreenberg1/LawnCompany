@@ -158,7 +158,7 @@ export default function KerrvillePage() {
             </div>
             <div className="space-y-6 text-[#4a4a4a] text-lg leading-relaxed">
               <p>
-                Downtown Kerrville homeowners along streets like Water Street and Earl Garrett often have established older landscape beds and mature trees that need careful, experienced attention. Properties in East Kerrville near Louise Hays Park frequently deal with erosion and drainage challenges that come with river-adjacent terrain.
+                Downtown Kerrville homeowners along streets like Water Street and Earl Garrett often have established older <Link to="/services/mulch-installation" className="underline underline-offset-2 hover:text-[#2a2a2a] transition-colors">landscape beds</Link> and <Link to="/services/tree-hedge-trimming" className="underline underline-offset-2 hover:text-[#2a2a2a] transition-colors">mature trees</Link> that need careful, experienced attention. Properties in East Kerrville near Louise Hays Park frequently deal with erosion and drainage challenges that come with river-adjacent terrain.
               </p>
               <p>
                 Homes on the ridgelines above Tivy High School have the thin, rocky soil over caliche that is almost universal at elevation in Kerr County. We maintain properties in all of these contexts and bring the right approach to each one.
