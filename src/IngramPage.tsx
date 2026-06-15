@@ -116,7 +116,7 @@ export default function IngramPage() {
                 Lawn Care in Ingram
               </h1>
               <p className="text-xl text-[#4a4a4a] mb-10 leading-relaxed max-w-xl">
-                Ingram sits just west of Kerrville along the Guadalupe River corridor, and we serve it as one of our primary territories. From the FM 1340 neighborhoods to river-adjacent properties and hillside lots with the rocky, thin soil typical of Kerr County, we bring the right equipment and approach for <Link to="/services/lawn-mowing-bundle" className="underline underline-offset-2 hover:text-[#2a2a2a] transition-colors">every yard</Link> we work in.
+                Ingram sits just west of Kerrville along the Guadalupe River corridor, and we serve it as one of our primary territories. From the FM 1340 neighborhoods to river-adjacent properties and hillside lots with the rocky, thin soil typical of Kerr County, we bring the right equipment and approach for every yard we work in.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <button
@@ -313,6 +313,3 @@ export default function IngramPage() {
     </div>
   );
 }
-
-
-export default IngramPage
