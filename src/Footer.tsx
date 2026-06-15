@@ -1,4 +1,5 @@
 import { Phone, Mail, MapPin } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 export default function Footer() {
   return (
@@ -24,12 +25,12 @@ export default function Footer() {
 
         <div>
           <h3 className="text-2xl font-extralight text-[#5a5a5a] mb-6">Services</h3>
-          <ul className="space-y-3 text-[#4a4a4a]">
-            <li>Lawn Mowing Bundle</li>
-            <li>Lawn Care & Maintenance</li>
-            <li>Tree & Hedge Trimming</li>
-            <li>Sod Installation</li>
-            <li>Mulch Installation</li>
+          <ul className="space-y-3">
+            <li><Link to="/services/lawn-mowing-bundle" className="text-[#4a4a4a] hover:text-[#2a2a2a] transition-colors">Lawn Mowing Bundle</Link></li>
+            <li><Link to="/services/lawn-care-maintenance" className="text-[#4a4a4a] hover:text-[#2a2a2a] transition-colors">Lawn Care & Maintenance</Link></li>
+            <li><Link to="/services/tree-hedge-trimming" className="text-[#4a4a4a] hover:text-[#2a2a2a] transition-colors">Tree & Hedge Trimming</Link></li>
+            <li><Link to="/services/sod-installation" className="text-[#4a4a4a] hover:text-[#2a2a2a] transition-colors">Sod Installation</Link></li>
+            <li><Link to="/services/mulch-installation" className="text-[#4a4a4a] hover:text-[#2a2a2a] transition-colors">Mulch Installation</Link></li>
           </ul>
         </div>
 
