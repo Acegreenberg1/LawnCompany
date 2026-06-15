@@ -226,7 +226,7 @@ export default function LawnMowingBundlePage() {
               <div>
                 <h3 className="text-2xl font-extralight text-[#5a5a5a] mb-4">Curb Appeal That Lasts All Season</h3>
                 <p className="text-lg leading-relaxed">
-                  A well-maintained lawn is one of the first things neighbors and visitors notice about your home. In Kerrville and Ingram, where many neighborhoods have a relaxed Hill Country character, a neatly mowed, cleanly edged lawn stands out in the best possible way. It signals pride of ownership and contributes to property values across the block. Consistent professional mowing maintains that level of appearance week after week rather than the boom-and-bust cycle of DIY mowing every few weeks.
+                  A well-maintained lawn is one of the first things neighbors and visitors notice about your home. In <Link to="/service-areas/kerrville" className="underline underline-offset-2 hover:text-[#2a2a2a] transition-colors">Kerrville</Link> and <Link to="/service-areas/ingram" className="underline underline-offset-2 hover:text-[#2a2a2a] transition-colors">Ingram</Link>, where many neighborhoods have a relaxed Hill Country character, a neatly mowed, cleanly edged lawn stands out in the best possible way. It signals pride of ownership and contributes to property values across the block. Consistent professional mowing maintains that level of appearance week after week rather than the boom-and-bust cycle of DIY mowing every few weeks.
                 </p>
               </div>
               <div>
