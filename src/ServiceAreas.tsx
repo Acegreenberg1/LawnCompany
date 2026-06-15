@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { ArrowRight, Check, Phone, ChevronDown, ChevronUp, MapPin, Navigation } from 'lucide-react';
+import { ArrowRight, Check, Phone, ChevronDown, ChevronUp, MapPin } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import Header from './Header';
 import Footer from './Footer';
@@ -218,76 +218,6 @@ export default function ServiceAreasPage() {
           </div>
         </section>
       ))}
-
-      {/* Map + Directions */}
-      <section className="px-8 md:px-16 lg:px-32 py-20 bg-[#e8e5dd]">
-        <div className="max-w-7xl mx-auto">
-          <div className="grid lg:grid-cols-2 gap-16 items-center">
-            <div>
-              <p className="text-sm tracking-[0.3em] text-[#8a8a8a] mb-6">FIND US</p>
-              <h2 className="text-4xl md:text-5xl font-extralight text-[#5a5a5a] mb-8 leading-tight">
-                Based in Kerrville, Serving the Hill Country
-              </h2>
-              <div className="space-y-6 text-[#4a4a4a] text-lg leading-relaxed">
-                <p>
-                  Our home base is at 112 Holly Hill Dr, Kerrville, TX 78028 -- right in the heart of Kerr County. From here we run routes that cover every part of Kerrville and head west into Ingram and the Hunt corridor.
-                </p>
-                <p>
-                  Because we are genuinely local, we do not charge travel fees to reach properties across our service area. Ingram is a short drive. If you are in Kerr County and you are wondering whether we can get to you, the answer is probably yes -- and if it is not, we will tell you honestly rather than string you along.
-                </p>
-              </div>
-
-              <div className="mt-10 space-y-4">
-                <div className="flex items-start gap-4">
-                  <MapPin className="w-5 h-5 text-[#8a8a8a] flex-shrink-0 mt-0.5" />
-                  <div>
-                    <p className="font-light text-[#5a5a5a]">Kerrville Lawn Company</p>
-                    <p className="text-[#6a6a6a] text-sm">112 Holly Hill Dr, Kerrville, TX 78028</p>
-                  </div>
-                </div>
-                <div className="flex items-start gap-4">
-                  <Phone className="w-5 h-5 text-[#8a8a8a] flex-shrink-0 mt-0.5" />
-                  <div>
-                    <a href="tel:+18303830189" className="font-light text-[#5a5a5a] hover:text-[#2a2a2a] transition-colors">(830) 383-0189</a>
-                    <p className="text-[#6a6a6a] text-sm">Call or text -- we respond promptly</p>
-                  </div>
-                </div>
-                <div className="flex items-start gap-4">
-                  <Navigation className="w-5 h-5 text-[#8a8a8a] flex-shrink-0 mt-0.5" />
-                  <div>
-                    <p className="text-[#6a6a6a] text-sm">On Highway 16 south of downtown Kerrville. Easy to find, easy to reach from any part of our service area.</p>
-                  </div>
-                </div>
-              </div>
-
-              <a
-                href="https://maps.google.com/?q=112+Holly+Hill+Dr+Kerrville+TX+78028"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="group inline-flex items-center gap-2 mt-8 px-8 py-3 border border-[#d0cdc5] rounded-full text-xs tracking-[0.25em] hover:bg-[#d8d5cd] transition-colors text-black"
-              >
-                <MapPin className="w-3 h-3" />
-                GET DIRECTIONS
-                <ArrowRight className="w-3 h-3 group-hover:translate-x-1 transition-transform" />
-              </a>
-            </div>
-
-            {/* Map embed */}
-            <div className="w-full h-96 rounded-lg overflow-hidden border border-[#d0cdc5]">
-              <iframe
-                title="Kerrville Lawn Company location map"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3446.0!2d-99.14!3d30.047!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x865b40000000001%3A0x1!2s112+Holly+Hill+Dr%2C+Kerrville%2C+TX+78028!5e0!3m2!1sen!2sus!4v1700000000000"
-                width="100%"
-                height="100%"
-                style={{ border: 0 }}
-                allowFullScreen
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* FAQ */}
       <section className="px-8 md:px-16 lg:px-32 py-20">
