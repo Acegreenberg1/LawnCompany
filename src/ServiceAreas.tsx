@@ -117,14 +117,14 @@ export default function ServiceAreasPage() {
       <section className="px-8 md:px-16 lg:px-32 py-8 bg-[#e8e5dd] border-b border-[#d0cdc5]">
         <div className="max-w-7xl mx-auto flex flex-wrap gap-3">
           {areas.map((a) => (
-            <a
+            <Link
               key={a.name}
-              href={`#${a.name.toLowerCase().replace(/\s/g, '-')}`}
+              to={a.link}
               className="flex items-center gap-2 px-5 py-2 border border-[#d0cdc5] rounded-full text-xs tracking-[0.2em] hover:bg-[#d8d5cd] transition-colors text-[#4a4a4a]"
             >
               <MapPin className="w-3 h-3" />
               {a.name.toUpperCase()}
-            </a>
+            </Link>
           ))}
         </div>
       </section>
