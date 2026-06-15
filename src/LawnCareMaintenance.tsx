@@ -226,7 +226,7 @@ export default function LawnCareMaintenancePage() {
               <div>
                 <h3 className="text-2xl font-extralight text-[#5a5a5a] mb-4">Thicker, Denser Turf</h3>
                 <p className="text-lg leading-relaxed">
-                  The most visible benefit of a consistent lawn care program is dramatically denser turf. Properly fertilized and aerated grass fills in bare spots, develops a stronger root system, and spreads to create the thick, uniform carpet that defines a truly healthy lawn. Dense turf is self-reinforcing — it shades out weed seeds, retains soil moisture more effectively, and recovers faster from any stress event. In Kerrville and Ingram, where thin soil and summer heat constantly push lawns toward sparse, weedy growth, targeted maintenance is what separates exceptional lawns from average ones.
+                  The most visible benefit of a consistent lawn care program is dramatically denser turf. Properly fertilized and aerated grass fills in bare spots, develops a stronger root system, and spreads to create the thick, uniform carpet that defines a truly healthy lawn. Dense turf is self-reinforcing — it shades out weed seeds, retains soil moisture more effectively, and recovers faster from any stress event. In <Link to="/service-areas/kerrville" className="underline underline-offset-2 hover:text-[#2a2a2a] transition-colors">Kerrville</Link> and <Link to="/service-areas/ingram" className="underline underline-offset-2 hover:text-[#2a2a2a] transition-colors">Ingram</Link>, where thin soil and summer heat constantly push lawns toward sparse, weedy growth, targeted maintenance is what separates exceptional lawns from average ones.
                 </p>
               </div>
               <div>
