@@ -244,7 +244,7 @@ export default function SodInstallationPage() {
               <div>
                 <h3 className="text-2xl font-extralight text-[#5a5a5a] mb-4">Erosion Control on Slopes</h3>
                 <p className="text-lg leading-relaxed">
-                  Sloped properties in Kerrville and Ingram are common, and slopes present one of the most difficult challenges for any lawn establishment method. Seed simply washes down the slope in rain before it has a chance to germinate and root. Sod, by contrast, provides immediate erosion protection from the moment it is laid. The existing root mat holds soil in place through rain events, and the surface coverage prevents the runoff channels that develop on bare slopes and cause progressively worse erosion over time. For any sloped area where bare soil is exposed, sod is almost always the correct choice.
+                  Sloped properties in <Link to="/service-areas/kerrville" className="underline underline-offset-2 hover:text-[#2a2a2a] transition-colors">Kerrville</Link> and <Link to="/service-areas/ingram" className="underline underline-offset-2 hover:text-[#2a2a2a] transition-colors">Ingram</Link> are common, and slopes present one of the most difficult challenges for any lawn establishment method. Seed simply washes down the slope in rain before it has a chance to germinate and root. Sod, by contrast, provides immediate erosion protection from the moment it is laid. The existing root mat holds soil in place through rain events, and the surface coverage prevents the runoff channels that develop on bare slopes and cause progressively worse erosion over time. For any sloped area where bare soil is exposed, sod is almost always the correct choice.
                 </p>
               </div>
             </div>
