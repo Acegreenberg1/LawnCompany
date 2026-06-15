@@ -62,6 +62,7 @@ const areas = [
     intro: 'Kerrville is where we are rooted. Our shop is at 112 Holly Hill Dr, and we serve every part of the city -- established neighborhoods near downtown, river-adjacent properties along the Guadalupe, hillside homes with sloped rocky lots, and newer subdivisions on the city\'s edges. We understand Hill Country lawn conditions from working here every week of the growing season.',
     img: '/kerrville_slightly_lighter.jpg',
     imgAlt: 'Lawn care service in Kerrville Texas near the Guadalupe River',
+    link: '/service-areas/kerrville',
   },
   {
     name: 'Ingram',
@@ -69,6 +70,7 @@ const areas = [
     intro: 'Ingram sits about eight miles west of Kerrville along the Guadalupe River corridor and is a regular part of our weekly routes. Properties here tend to have a more rural character -- larger lots, mature oak and cedar canopy, and a mix of maintained turf and native landscape. We provide our full range of services in Ingram and are a familiar presence throughout the community.',
     img: '/lawn_tools_under_2mb.jpg',
     imgAlt: 'Professional lawn mowing service in Ingram Texas Hill Country',
+    link: '/service-areas/ingram',
   },
 ];
 
@@ -198,13 +200,22 @@ export default function ServiceAreasPage() {
                 </h2>
                 <p className="text-lg text-[#4a4a4a] leading-relaxed mb-8">{area.intro}</p>
 
-                <button
-                  onClick={() => setIsContactModalOpen(true)}
-                  className="group flex items-center gap-2 px-8 py-3 border border-[#d0cdc5] rounded-full text-xs tracking-[0.25em] hover:bg-[#d8d5cd] transition-colors text-black bg-transparent"
-                >
-                  GET A QUOTE FOR {area.name.toUpperCase()}
-                  <ArrowRight className="w-3 h-3 group-hover:translate-x-1 transition-transform" />
-                </button>
+                <div className="flex flex-wrap gap-3">
+                  <Link
+                    to={area.link}
+                    className="group flex items-center gap-2 px-8 py-3 border border-[#d0cdc5] rounded-full text-xs tracking-[0.25em] hover:bg-[#d8d5cd] transition-colors text-black bg-transparent"
+                  >
+                    LEARN MORE ABOUT {area.name.toUpperCase()}
+                    <ArrowRight className="w-3 h-3 group-hover:translate-x-1 transition-transform" />
+                  </Link>
+                  <button
+                    onClick={() => setIsContactModalOpen(true)}
+                    className="group flex items-center gap-2 px-8 py-3 border border-[#d0cdc5] rounded-full text-xs tracking-[0.25em] hover:bg-[#d8d5cd] transition-colors text-black bg-transparent"
+                  >
+                    GET A QUOTE
+                    <ArrowRight className="w-3 h-3 group-hover:translate-x-1 transition-transform" />
+                  </button>
+                </div>
               </div>
 
               <div className={`w-full h-80 md:h-96 rounded-lg overflow-hidden ${idx % 2 !== 0 ? 'lg:col-start-1' : ''}`}>
