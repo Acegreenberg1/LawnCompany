@@ -1,6 +1,7 @@
 import { ArrowRight } from 'lucide-react';
 import { useState } from 'react';
 import { Routes, Route, useNavigate } from 'react-router-dom';
+import ScrollToTop from './ScrollToTop';
 import Header from './Header';
 import Footer from './Footer';
 import Services from './Services';
@@ -209,6 +210,8 @@ function AboutPage() {
 
 function App() {
   return (
+    <>
+    <ScrollToTop />
     <Routes>
       <Route path="/" element={<HomePage />} />
       <Route path="/services" element={<ServicesPage />} />
@@ -223,6 +226,7 @@ function App() {
       <Route path="/service-areas/kerrville" element={<KerrvillePage />} />
       <Route path="/service-areas/ingram" element={<IngramPage />} />
     </Routes>
+    </>
   );
 }
 
