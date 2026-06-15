@@ -164,7 +164,7 @@ export default function IngramPage() {
                 Properties along the Guadalupe River west of town often have more moisture-tolerant grass options and lush riparian plantings that require careful, experienced attention. Lots on the higher ground deal with the thin, rocky soil over limestone that is typical across Kerr County at elevation.
               </p>
               <p>
-                Whether you are on the river bottom, a hilltop lot, or a standard subdivision property, we assess your specific conditions on the first visit and match our approach to what your lawn actually needs.
+                Whether you are on the river bottom, a hilltop lot, or a standard subdivision property, we assess your specific conditions on the first visit and match our approach to what your <Link to="/services/lawn-care-maintenance" className="underline underline-offset-2 hover:text-[#2a2a2a] transition-colors">lawn actually needs</Link>.
               </p>
             </div>
           </div>
