@@ -8,19 +8,19 @@ import ContactModal from './ContactModal';
 const faqs = [
   {
     q: 'How often should I have my lawn mowed in Kerrville?',
-    a: 'During the active growing season — typically April through October in the Texas Hill Country — most lawns benefit from weekly mowing. Bermuda grass in particular grows aggressively in the summer heat and can go from neat to shaggy in just five to seven days. In the cooler months from November through March, bi-weekly or monthly visits are usually sufficient depending on your grass type and rainfall. We will assess your specific lawn during your initial quote and recommend a schedule that keeps it looking its best year-round without over-servicing.',
+    a: 'During the active growing season, typically April through October in the Texas Hill Country, most lawns benefit from weekly mowing. Bermuda grass in particular grows aggressively in the summer heat and can go from neat to shaggy in just five to seven days. In the cooler months from November through March, bi-weekly or monthly visits are usually sufficient depending on your grass type and rainfall. We will assess your specific lawn during your initial quote and recommend a schedule that keeps it looking its best year-round without over-servicing.',
   },
   {
     q: 'What do you do with the grass clippings after mowing?',
-    a: 'In most cases we mulch the clippings back into the lawn using our commercial mowers set to a mulching configuration. Finely chopped clippings break down quickly and return valuable nitrogen to the soil — essentially a free, light fertilization on every visit. When the grass is particularly tall or the clippings are too heavy to mulch effectively, we bag and remove them so they do not smother the turf. Either way, we blow all hard surfaces — driveways, sidewalks, patios — completely clean before we leave.',
+    a: 'In most cases we mulch the clippings back into the lawn using our commercial mowers set to a mulching configuration. Finely chopped clippings break down quickly and return valuable nitrogen to the soil, essentially a free, light fertilization on every visit. When the grass is particularly tall or the clippings are too heavy to mulch effectively, we bag and remove them so they do not smother the turf. Either way, we blow all hard surfaces, driveways, sidewalks, patios, completely clean before we leave.',
   },
   {
     q: 'What happens if it rains on my scheduled service day?',
-    a: 'Safety and turf health are both reasons we avoid mowing wet grass whenever possible. Wet conditions can cause our equipment to tear rather than cut turf cleanly, and clippings clump in ways that can promote fungal disease. If rain is heavy or the ground is waterlogged, we will reschedule your visit to the next available dry window — typically within one to two days. We will contact you as early as possible to let you know about any changes. Light morning dew does not typically cause us to skip a visit.',
+    a: 'Safety and turf health are both reasons we avoid mowing wet grass whenever possible. Wet conditions can cause our equipment to tear rather than cut turf cleanly, and clippings clump in ways that can promote fungal disease. If rain is heavy or the ground is waterlogged, we will reschedule your visit to the next available dry window, typically within one to two days. We will contact you as early as possible to let you know about any changes. Light morning dew does not typically cause us to skip a visit.',
   },
   {
     q: 'Do I need to be home during the service visit?',
-    a: 'No, you do not need to be home. As long as we have clear access to your yard — gates unlocked, no vehicles blocking the driveway — we can complete the full service and be on our way. Many of our regular customers in Kerrville and Ingram are at work or running errands when we visit. We will send a notification when we are on our way and another when the job is complete, so you always know exactly when your lawn was serviced.',
+    a: 'No, you do not need to be home. As long as we have clear access to your yard, with gates unlocked and no vehicles blocking the driveway, we can complete the full service and be on our way. Many of our regular customers in Kerrville and Ingram are at work or running errands when we visit. We will send a notification when we are on our way and another when the job is complete, so you always know exactly when your lawn was serviced.',
   },
   {
     q: 'How do you handle rocky or sloped yards common in the Hill Country?',
@@ -28,15 +28,15 @@ const faqs = [
   },
   {
     q: 'What grass types do you work with?',
-    a: 'We work with all of the turf grass varieties common to the Texas Hill Country. Bermuda grass is the most prevalent in Kerrville and Ingram due to its heat and drought tolerance, and we are expert at mowing it at the correct height — typically between one and two inches depending on the season — to encourage dense, healthy growth. We also regularly service St. Augustine, Zoysia, and buffalo grass lawns. Each variety has its own ideal mowing height and frequency, and we calibrate our mowers accordingly on every visit.',
+    a: 'We work with all of the turf grass varieties common to the Texas Hill Country. Bermuda grass is the most prevalent in Kerrville and Ingram due to its heat and drought tolerance, and we are expert at mowing it at the correct height, typically between one and two inches depending on the season, to encourage dense, healthy growth. We also regularly service St. Augustine, Zoysia, and buffalo grass lawns. Each variety has its own ideal mowing height and frequency, and we calibrate our mowers accordingly on every visit.',
   },
   {
     q: 'Can you mow around sprinkler heads, landscaping, and obstacles?',
-    a: 'Absolutely. We trim carefully around all sprinkler heads, landscape beds, trees, fencing, outdoor furniture, and any other fixtures in your yard. We treat your property with the same care we would want our own homes treated with. If you have new landscaping features or recently installed irrigation, just let us know ahead of the visit and we will take extra care around those areas. We never skip obstacles — we navigate them precisely so every inch of reachable turf gets properly mowed and trimmed.',
+    a: 'Absolutely. We trim carefully around all sprinkler heads, landscape beds, trees, fencing, outdoor furniture, and any other fixtures in your yard. We treat your property with the same care we would want our own homes treated with. If you have new landscaping features or recently installed irrigation, just let us know ahead of the visit and we will take extra care around those areas. We never skip obstacles. We navigate them precisely so every inch of reachable turf gets properly mowed and trimmed.',
   },
   {
     q: 'How is pricing determined for the Lawn Mowing Bundle?',
-    a: 'Pricing is based primarily on your lot size and the frequency of service. A weekly schedule is more cost-efficient per visit than bi-weekly because the grass stays at a manageable height and each visit takes less time. We also factor in access complexity, terrain, and the current condition of the lawn on the first visit (an overgrown lawn requires more time and may carry a one-time initial cleanup fee). We provide completely transparent, custom quotes — no hidden fees, no surprise charges. Contact us to get a free quote specific to your property.',
+    a: 'Pricing is based primarily on your lot size and the frequency of service. A weekly schedule is more cost-efficient per visit than bi-weekly because the grass stays at a manageable height and each visit takes less time. We also factor in access complexity, terrain, and the current condition of the lawn on the first visit (an overgrown lawn requires more time and may carry a one-time initial cleanup fee). We provide completely transparent, custom quotes with no hidden fees and no surprise charges. Contact us to get a free quote specific to your property.',
   },
   {
     q: 'Is there a contract or can I cancel anytime?',
@@ -44,7 +44,7 @@ const faqs = [
   },
   {
     q: 'Do you offer one-time mowing services?',
-    a: 'Yes, we do offer one-time mowing services for special situations — moving into a new home, hosting an event, or simply catching up after a busy stretch. One-time visits are priced to reflect the additional setup and the typically higher grass height we encounter. If you would like to transition to recurring service after a one-time visit, we make that easy and will apply consistent pricing going forward. Many of our longtime recurring customers started with a single call.',
+    a: 'Yes, we do offer one-time mowing services for special situations, such as moving into a new home, hosting an event, or simply catching up after a busy stretch. One-time visits are priced to reflect the additional setup and the typically higher grass height we encounter. If you would like to transition to recurring service after a one-time visit, we make that easy and will apply consistent pricing going forward. Many of our longtime recurring customers started with a single call.',
   },
 ];
 
@@ -89,7 +89,7 @@ export default function LawnMowingBundlePage() {
             Professional Lawn Mowing Bundle in Kerrville & Ingram
           </h1>
           <p className="text-xl md:text-2xl text-[#4a4a4a] mb-12 max-w-3xl leading-relaxed">
-            A complete, recurring mowing service designed for Texas Hill Country homes — reliable, thorough, and backed by a satisfaction guarantee every single visit.
+            A complete, recurring mowing service designed for Texas Hill Country homes. Reliable, thorough, and backed by a satisfaction guarantee every single visit.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <button
@@ -135,10 +135,10 @@ export default function LawnMowingBundlePage() {
             </div>
             <div className="space-y-6 text-[#4a4a4a] text-lg leading-relaxed">
               <p>
-                The Kerrville Lawn Company Lawn Mowing Bundle is a recurring professional mowing service that handles everything your lawn needs on each visit — mowing, string trimming, edging, and a complete blowdown of all hard surfaces. Rather than calling around for one-off visits or dealing with unreliable crews, you get a consistent, scheduled team that learns your property and shows up dependably, week after week.
+                The Kerrville Lawn Company Lawn Mowing Bundle is a recurring professional mowing service that handles everything your lawn needs on each visit: mowing, string trimming, edging, and a complete blowdown of all hard surfaces. Rather than calling around for one-off visits or dealing with unreliable crews, you get a consistent, scheduled team that learns your property and shows up dependably, week after week.
               </p>
               <p>
-                Consistent mowing is one of the single most important things you can do for the long-term health and appearance of a Texas lawn. <Link to="/service-areas/kerrville" className="underline underline-offset-2 hover:text-[#2a2a2a] transition-colors">Kerrville</Link> and <Link to="/service-areas/ingram" className="underline underline-offset-2 hover:text-[#2a2a2a] transition-colors">Ingram</Link> sit in the heart of the Edwards Plateau, where hot summers, periodic drought, and rocky caliche soil create unique challenges for turf grass. The dominant varieties in our area — Bermuda, St. Augustine, and Zoysia — all respond dramatically to mowing frequency and height. Letting grass get too tall before cutting removes too much of the blade at once, stressing the plant and encouraging weed intrusion. Regular professional mowing keeps your turf dense, weed-competitive, and resilient through even the harshest Texas summers.
+                Consistent mowing is one of the single most important things you can do for the long-term health and appearance of a Texas lawn. <Link to="/service-areas/kerrville" className="underline underline-offset-2 hover:text-[#2a2a2a] transition-colors">Kerrville</Link> and <Link to="/service-areas/ingram" className="underline underline-offset-2 hover:text-[#2a2a2a] transition-colors">Ingram</Link> sit in the heart of the Edwards Plateau, where hot summers, periodic drought, and rocky caliche soil create unique challenges for turf grass. The dominant varieties in our area, Bermuda, St. Augustine, and Zoysia, all respond dramatically to mowing frequency and height. Letting grass get too tall before cutting removes too much of the blade at once, stressing the plant and encouraging weed intrusion. Regular professional mowing keeps your turf dense, weed-competitive, and resilient through even the harshest Texas summers.
               </p>
               <p>
                 Our bundle is designed specifically for homeowners who value their time and want peace of mind knowing their lawn is handled by people who genuinely care about the results. We serve all of Kerrville and the greater Ingram area, and we bring the same level of professionalism to every yard, regardless of size.
@@ -163,12 +163,12 @@ export default function LawnMowingBundlePage() {
               {
                 icon: <Check className="w-6 h-6 text-[#5a5a5a]" />,
                 title: 'Precision Mowing',
-                body: 'We cut your turf at the optimal height for your specific grass type using commercial-grade mowers that produce a clean, uniform finish. Bermuda lawns are typically maintained at one to two inches, while St. Augustine prefers a slightly taller three to four inch height to retain moisture and outcompete weeds. We never scalp — removing more than one-third of the blade in a single pass — and we alternate mowing patterns where possible to prevent grain and reduce soil compaction from repeated wheel tracks.',
+                body: 'We cut your turf at the optimal height for your specific grass type using commercial-grade mowers that produce a clean, uniform finish. Bermuda lawns are typically maintained at one to two inches, while St. Augustine prefers a slightly taller three to four inch height to retain moisture and outcompete weeds. We never scalp, meaning we never remove more than one-third of the blade in a single pass, and we alternate mowing patterns where possible to prevent grain and reduce soil compaction from repeated wheel tracks.',
               },
               {
                 icon: <Scissors className="w-6 h-6 text-[#5a5a5a]" />,
                 title: 'String Trimming',
-                body: 'Commercial mowers cannot reach every corner, and that is exactly where string trimmers come in. We trim along all fence lines, around tree bases, under deck edges, beside garden borders, and in any tight area the mower cannot access. This is what separates a truly finished lawn from one that simply had the middle mowed. We take as much time on the trimming as we do on the mowing — it is what gives your yard that crisp, cared-for look up close.',
+                body: 'Commercial mowers cannot reach every corner, and that is exactly where string trimmers come in. We trim along all fence lines, around tree bases, under deck edges, beside garden borders, and in any tight area the mower cannot access. This is what separates a truly finished lawn from one that simply had the middle mowed. We take as much time on the trimming as we do on the mowing. It is what gives your yard that crisp, cared-for look up close.',
               },
               {
                 icon: <Star className="w-6 h-6 text-[#5a5a5a]" />,
@@ -183,12 +183,12 @@ export default function LawnMowingBundlePage() {
               {
                 icon: <Shield className="w-6 h-6 text-[#5a5a5a]" />,
                 title: 'Quality Walk-Through',
-                body: 'Before leaving your property, we do a quick walk-through to make sure nothing was missed and the finished result meets our standards. We check for any areas that may need a second pass, confirm all hard surfaces are clear, and make sure gates are secured. If you are home and want to walk through with us, we welcome that — your satisfaction is the measure of a successful visit, and we stand behind our work completely.',
+                body: 'Before leaving your property, we do a quick walk-through to make sure nothing was missed and the finished result meets our standards. We check for any areas that may need a second pass, confirm all hard surfaces are clear, and make sure gates are secured. If you are home and want to walk through with us, we welcome that. Your satisfaction is the measure of a successful visit, and we stand behind our work completely.',
               },
               {
                 icon: <Clock className="w-6 h-6 text-[#5a5a5a]" />,
                 title: 'Consistent Scheduling',
-                body: 'Reliability is not a bonus — it is a core part of the service. When you sign up for weekly or bi-weekly lawn mowing in Kerrville or Ingram, you receive a consistent day and approximate time window. We send ahead-of-service notifications so you are never caught off guard. If anything changes on our end, we communicate proactively. Consistent scheduling is what allows your lawn to develop the healthy, uniform growth pattern that comes from regular professional maintenance.',
+                body: 'Reliability is not a bonus. It is a core part of the service. When you sign up for weekly or bi-weekly lawn mowing in Kerrville or Ingram, you receive a consistent day and approximate time window. We send ahead-of-service notifications so you are never caught off guard. If anything changes on our end, we communicate proactively. Consistent scheduling is what allows your lawn to develop the healthy, uniform growth pattern that comes from regular professional maintenance.',
               },
             ].map(({ icon, title, body }) => (
               <div key={title} className="bg-[#f5f1e8] p-10 rounded-lg">
@@ -244,7 +244,7 @@ export default function LawnMowingBundlePage() {
               <div>
                 <h3 className="text-2xl font-extralight text-[#5a5a5a] mb-4">Experience with Rocky and Sloped Properties</h3>
                 <p className="text-lg leading-relaxed">
-                  Properties in the Kerrville and Ingram area often feature the rocky, terraced landscapes that make the Hill Country so distinctive — and so challenging to mow safely. Exposed limestone outcroppings, steep grades, and irregular terrain require careful equipment selection and technique. We bring both walk-behind and stand-on mowers to handle whatever your yard presents, and our crews are experienced navigating these conditions safely and thoroughly. We will never damage your landscape features or leave hard-to-reach areas uncut.
+                  Properties in the Kerrville and Ingram area often feature the rocky, terraced landscapes that make the Hill Country so distinctive, and so challenging to mow safely. Exposed limestone outcroppings, steep grades, and irregular terrain require careful equipment selection and technique. We bring both walk-behind and stand-on mowers to handle whatever your yard presents, and our crews are experienced navigating these conditions safely and thoroughly. We will never damage your landscape features or leave hard-to-reach areas uncut.
                 </p>
               </div>
               <div>
@@ -275,7 +275,7 @@ export default function LawnMowingBundlePage() {
             {[
               { step: '01', title: 'Property Assessment', body: 'On arrival we quickly walk the perimeter to note any new obstacles, changes since the last visit, or areas that need special attention. This takes just a few minutes but ensures nothing gets missed during the service.' },
               { step: '02', title: 'Mowing with Commercial Equipment', body: 'We mow with professional-grade equipment calibrated to your specific grass type and the current season. We adjust deck height based on grass variety and growth stage, and we alternate our mowing direction regularly to prevent grain buildup and soil compaction.' },
-              { step: '03', title: 'String Trimming All Edges', body: 'Our trimmer operator follows immediately behind the mower, addressing every area the mower cannot reach — fence bases, tree rings, around posts, under overhangs, and in tight landscape corners. We take our time here because it is where the detail shows.' },
+              { step: '03', title: 'String Trimming All Edges', body: 'Our trimmer operator follows immediately behind the mower, addressing every area the mower cannot reach: fence bases, tree rings, around posts, under overhangs, and in tight landscape corners. We take our time here because it is where the detail shows.' },
               { step: '04', title: 'Edging Hard Surfaces', body: 'We use a dedicated edger to cut a sharp, clean vertical boundary along every sidewalk, driveway apron, and curb line on the property. This step defines your lawn and creates the polished, finished appearance that sets professional mowing apart from DIY.' },
               { step: '05', title: 'Blowing and Final Cleanup', body: 'Commercial backpack blowers clear every clipping from all hard surfaces. Driveways, patios, porches, and walkways are completely clear when we finish. Any clippings near the turf edge are blown back into the lawn; heavier accumulations are handled based on conditions.' },
               { step: '06', title: 'Walk-Through and Departure', body: 'We do a final visual check of the entire property before loading equipment and leaving. Gates are secured, any moved items are returned to their original positions, and we confirm everything meets our quality standard. You will receive a completion notification so you know the job is done.' },
@@ -304,7 +304,7 @@ export default function LawnMowingBundlePage() {
                   Kerrville Lawn Company provides lawn mowing service throughout the city of Kerrville and the surrounding communities of Ingram, Center Point, Hunt, and the broader Hill Country area along the Guadalupe River corridor. We are locally owned and operated, which means we understand the terrain, the soil, the grass types, and the seasonal rhythms that affect lawns in this specific region.
                 </p>
                 <p>
-                  Whether your home is in an established neighborhood close to downtown Kerrville, a newer development on the east side, a rural acreage property outside Ingram, or anywhere in between — we can provide consistent, reliable lawn mowing near you. We keep our service area focused on the communities we know best so we can maintain the schedule reliability our customers depend on.
+                  Whether your home is in an established neighborhood close to downtown Kerrville, a newer development on the east side, a rural acreage property outside Ingram, or anywhere in between. We can provide consistent, reliable lawn mowing near you. We keep our service area focused on the communities we know best so we can maintain the schedule reliability our customers depend on.
                 </p>
               </div>
               <div className="mt-10 grid grid-cols-2 gap-4">
@@ -372,7 +372,7 @@ export default function LawnMowingBundlePage() {
                       <Check className="w-5 h-5 text-[#5a5a5a] flex-shrink-0 mt-0.5" />
                       <div>
                         <span className="font-medium text-[#4a4a4a]">{label}</span>
-                        <span className="text-[#6a6a6a]"> — {desc}</span>
+                        <span className="text-[#6a6a6a]">: {desc}</span>
                       </div>
                     </li>
                   ))}
