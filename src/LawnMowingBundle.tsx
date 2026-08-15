@@ -115,8 +115,8 @@ export default function LawnMowingBundlePage() {
         <div className="max-w-7xl mx-auto pb-16">
           <div className="w-full h-72 md:h-96 lg:h-[480px] rounded-lg overflow-hidden mt-12">
             <img
-              src="/Hero_Page_Image.jpg"
-              alt="Professional lawn mowing service in Kerrville Texas"
+              src="/20260611_133604.jpg"
+              alt="Freshly mowed green lawn with clean edging along a Kerrville area home"
               className="w-full h-full object-cover"
             />
           </div>
@@ -216,8 +216,8 @@ export default function LawnMowingBundlePage() {
               </h2>
               <div className="w-full h-72 rounded-lg overflow-hidden">
                 <img
-                  src="/lawn_tools_under_2mb.jpg"
-                  alt="Professional lawn care equipment and tools"
+                  src="/20260720_182252.jpg"
+                  alt="Lush green grass close-up showing healthy turf after professional mowing"
                   className="w-full h-full object-cover"
                 />
               </div>
@@ -327,8 +327,8 @@ export default function LawnMowingBundlePage() {
             </div>
             <div className="w-full h-96 rounded-lg overflow-hidden">
               <img
-                src="/kerrville_slightly_lighter.jpg"
-                alt="Kerrville Texas Hill Country landscape"
+                src="/20260416_190627.jpg"
+                alt="Grass edge along a roadside in the Kerrville Texas Hill Country"
                 className="w-full h-full object-cover"
               />
             </div>

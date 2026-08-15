@@ -137,8 +137,8 @@ export default function KerrvillePage() {
             </div>
             <div className="w-full h-80 md:h-96 rounded-lg overflow-hidden">
               <img
-                src="/kerrville_slightly_lighter.jpg"
-                alt="Kerrville Texas sign and landscape"
+                src="/20240329_193611.jpg"
+                alt="Sunset over the Guadalupe River near Kerrville Texas Hill Country"
                 className="w-full h-full object-cover"
               />
             </div>
@@ -231,8 +231,8 @@ export default function KerrvillePage() {
             </div>
             <div className="w-full h-full min-h-80">
               <img
-                src="/Hero_Page_Image.jpg"
-                alt="Kerrville lawn care service"
+                src="/20260226_183918.jpg"
+                alt="Tree silhouettes against a warm Hill Country sunset near Kerrville Texas"
                 className="w-full h-80 md:h-full object-cover rounded-lg"
               />
             </div>

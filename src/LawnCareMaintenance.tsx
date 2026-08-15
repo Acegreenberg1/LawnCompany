@@ -115,8 +115,8 @@ export default function LawnCareMaintenancePage() {
         <div className="max-w-7xl mx-auto pb-16">
           <div className="w-full h-72 md:h-96 lg:h-[480px] rounded-lg overflow-hidden mt-12">
             <img
-              src="/Hero_Page_Image.jpg"
-              alt="Healthy lawn care and maintenance in Kerrville Texas"
+              src="/20260508_155945.jpg"
+              alt="Residential backyard lawn in the Texas Hill Country needing professional care and maintenance"
               className="w-full h-full object-cover"
             />
           </div>
@@ -216,8 +216,8 @@ export default function LawnCareMaintenancePage() {
               </h2>
               <div className="w-full h-72 rounded-lg overflow-hidden">
                 <img
-                  src="/lawn_tools_under_2mb.jpg"
-                  alt="Professional lawn care tools and equipment"
+                  src="/20260802_154826.jpg"
+                  alt="Overgrown weeds and vines along a fence line before professional lawn care treatment"
                   className="w-full h-full object-cover"
                 />
               </div>
@@ -375,8 +375,8 @@ export default function LawnCareMaintenancePage() {
             </div>
             <div className="w-full h-96 rounded-lg overflow-hidden">
               <img
-                src="/kerrville_slightly_lighter.jpg"
-                alt="Kerrville Texas Hill Country"
+                src="/20260802_154821.jpg"
+                alt="Cedar fence with vine overgrowth common on Hill Country properties needing lawn care"
                 className="w-full h-full object-cover"
               />
             </div>

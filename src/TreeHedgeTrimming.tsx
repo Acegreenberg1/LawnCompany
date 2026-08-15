@@ -115,8 +115,8 @@ export default function TreeHedgeTrimmingPage() {
         <div className="max-w-7xl mx-auto pb-16">
           <div className="w-full h-72 md:h-96 lg:h-[480px] rounded-lg overflow-hidden mt-12">
             <img
-              src="/Hero_Page_Image.jpg"
-              alt="Professional tree and hedge trimming in Kerrville Texas"
+              src="/20260810_173420.jpg"
+              alt="Neatly trimmed flat-top hedge alongside a brick building in the Texas Hill Country"
               className="w-full h-full object-cover"
             />
           </div>
@@ -216,8 +216,8 @@ export default function TreeHedgeTrimmingPage() {
               </h2>
               <div className="w-full h-72 rounded-lg overflow-hidden">
                 <img
-                  src="/kerrville_slightly_lighter.jpg"
-                  alt="Well-maintained trees and hedges on a Kerrville property"
+                  src="/20260722_153126.jpg"
+                  alt="Healthy tree canopy near a structure showing the results of professional tree trimming"
                   className="w-full h-full object-cover"
                 />
               </div>
@@ -338,8 +338,8 @@ export default function TreeHedgeTrimmingPage() {
             </div>
             <div className="w-full h-96 rounded-lg overflow-hidden">
               <img
-                src="/lawn_tools_under_2mb.jpg"
-                alt="Professional tree trimming equipment in Kerrville Texas"
+                src="/20260602_152745.jpg"
+                alt="Dead and dormant tree with bare branches demonstrating the range of tree care work we handle"
                 className="w-full h-full object-cover"
               />
             </div>

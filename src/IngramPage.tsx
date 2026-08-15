@@ -137,8 +137,8 @@ export default function IngramPage() {
             </div>
             <div className="w-full h-80 md:h-96 rounded-lg overflow-hidden">
               <img
-                src="/Hero_Page_Image.jpg"
-                alt="Ingram Texas lawn care"
+                src="/20260610_154712.jpg"
+                alt="Lawn care crew truck and trailer serving Ingram Texas and the surrounding Hill Country"
                 className="w-full h-full object-cover"
               />
             </div>
@@ -231,8 +231,8 @@ export default function IngramPage() {
             </div>
             <div className="w-full h-full min-h-80">
               <img
-                src="/lawn_tools_under_2mb.jpg"
-                alt="Ingram lawn care service"
+                src="/20260416_143046.jpg"
+                alt="Stone retaining wall on a sloped Hill Country property near Ingram Texas"
                 className="w-full h-80 md:h-full object-cover rounded-lg"
               />
             </div>

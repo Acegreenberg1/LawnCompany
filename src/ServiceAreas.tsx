@@ -68,8 +68,8 @@ const areas = [
     name: 'Ingram',
     tag: 'JUST DOWN THE RIVER',
     intro: 'Ingram sits about eight miles west of Kerrville along the Guadalupe River corridor and is a regular part of our weekly routes. Properties here tend to have a more rural character -- larger lots, mature oak and cedar canopy, and a mix of maintained turf and native landscape. We provide our full range of services in Ingram and are a familiar presence throughout the community.',
-    img: '/lawn_tools_under_2mb.jpg',
-    imgAlt: 'Professional lawn mowing service in Ingram Texas Hill Country',
+    img: '/20260507_163307.jpg',
+    imgAlt: 'Hill Country ground cover and landscaping near Ingram Texas',
     link: '/service-areas/ingram',
   },
 ];
