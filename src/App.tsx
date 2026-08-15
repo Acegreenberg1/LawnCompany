@@ -178,6 +178,31 @@ function HomePage() {
         </div>
       </section>
 
+      {/* Map Section */}
+      <section className="px-8 md:px-16 lg:px-32 py-20 bg-[#e8e5dd]">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-12">
+            <p className="text-sm tracking-[0.3em] text-[#8a8a8a] mb-6">FIND US</p>
+            <h2 className="text-4xl md:text-5xl font-extralight text-[#5a5a5a] leading-tight">
+              Located in Kerrville, Serving the Hill Country
+            </h2>
+            <p className="text-lg text-[#4a4a4a] mt-6 max-w-2xl mx-auto leading-relaxed">
+              112 Holly Hill Dr, Kerrville, TX 78028 &nbsp;&middot;&nbsp; (830) 383-0189
+            </p>
+          </div>
+          <div className="w-full h-[450px] rounded-lg overflow-hidden border border-[#d0cdc5]">
+            <iframe
+              src="https://storage.googleapis.com/maps-solutions-woq1qq65py/locator-plus/c0m2/locator-plus.html"
+              width="100%"
+              height="100%"
+              style={{ border: 0 }}
+              loading="lazy"
+              title="Kerrville Lawn Company location map"
+            />
+          </div>
+        </div>
+      </section>
+
       <Footer />
       <ContactModal isOpen={isContactModalOpen} onClose={() => setIsContactModalOpen(false)} />
     </div>
