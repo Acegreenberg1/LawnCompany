@@ -113,11 +113,11 @@ export default function LawnMowingBundlePage() {
       {/* Hero Image */}
       <div className="px-8 md:px-16 lg:px-32 -mt-1 bg-[#e8e5dd]">
         <div className="max-w-7xl mx-auto pb-16">
-          <div className="w-full h-72 md:h-96 lg:h-[480px] rounded-lg overflow-hidden mt-12">
+          <div className="w-full h-96 md:h-[500px] lg:h-[600px] rounded-lg overflow-hidden mt-12 bg-[#d8d5cd]">
             <img
               src="/20260611_133604.jpg"
               alt="Freshly mowed green lawn with clean edging along a Kerrville area home"
-              className="w-full h-full object-cover"
+              className="w-full h-full object-contain"
             />
           </div>
         </div>
@@ -214,11 +214,11 @@ export default function LawnMowingBundlePage() {
               <h2 className="text-4xl md:text-5xl font-extralight text-[#5a5a5a] mb-8 leading-tight">
                 Benefits for Kerrville & Ingram Homeowners
               </h2>
-              <div className="w-full h-72 rounded-lg overflow-hidden">
+              <div className="w-full h-80 md:h-96 rounded-lg overflow-hidden bg-[#e8e5dd]">
                 <img
                   src="/20260720_182252.jpg"
                   alt="Lush green grass close-up showing healthy turf after professional mowing"
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-contain"
                 />
               </div>
             </div>
@@ -325,11 +325,11 @@ export default function LawnMowingBundlePage() {
                 ))}
               </div>
             </div>
-            <div className="w-full h-96 rounded-lg overflow-hidden">
+            <div className="w-full h-96 md:h-[450px] rounded-lg overflow-hidden bg-[#e8e5dd]">
               <img
                 src="/20260416_190627.jpg"
                 alt="Grass edge along a roadside in the Kerrville Texas Hill Country"
-                className="w-full h-full object-cover"
+                className="w-full h-full object-contain"
               />
             </div>
           </div>

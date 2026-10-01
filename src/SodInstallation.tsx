@@ -113,11 +113,11 @@ export default function SodInstallationPage() {
       {/* Hero Image */}
       <div className="px-8 md:px-16 lg:px-32 bg-[#e8e5dd]">
         <div className="max-w-7xl mx-auto pb-16">
-          <div className="w-full h-72 md:h-96 lg:h-[480px] rounded-lg overflow-hidden mt-12">
+          <div className="w-full h-96 md:h-[500px] lg:h-[600px] rounded-lg overflow-hidden mt-12 bg-[#d8d5cd]">
             <img
               src="/20260720_182308.jpg"
               alt="Lush green sod grass close-up showing healthy establishment after professional installation in Kerrville"
-              className="w-full h-full object-cover"
+              className="w-full h-full object-contain"
             />
           </div>
         </div>
@@ -214,11 +214,11 @@ export default function SodInstallationPage() {
               <h2 className="text-4xl md:text-5xl font-extralight text-[#5a5a5a] mb-8 leading-tight">
                 Benefits for Kerrville & Ingram Homeowners
               </h2>
-              <div className="w-full h-72 rounded-lg overflow-hidden">
+              <div className="w-full h-80 md:h-96 rounded-lg overflow-hidden bg-[#e8e5dd]">
                 <img
                   src="/20260720_182454.jpg"
                   alt="Close-up of vibrant green turf demonstrating successful sod establishment in Hill Country conditions"
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-contain"
                 />
               </div>
             </div>
@@ -472,11 +472,11 @@ export default function SodInstallationPage() {
                 ))}
               </div>
             </div>
-            <div className="w-full h-96 rounded-lg overflow-hidden">
+            <div className="w-full h-96 md:h-[450px] rounded-lg overflow-hidden bg-[#d8d5cd]">
               <img
                 src="/20260416_190641.jpg"
                 alt="Roadside grass edge with wildflowers in the Kerrville Texas Hill Country"
-                className="w-full h-full object-cover"
+                className="w-full h-full object-contain"
               />
             </div>
           </div>
