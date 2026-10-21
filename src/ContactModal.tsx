@@ -13,7 +13,7 @@ export default function ContactModal({ isOpen, onClose }: ContactModalProps) {
     email: '',
     phone: '',
     street_address: '',
-    service_type: 'Lawn Mowing',
+    service_type: 'Lawn Mowing Bundle',
     service_details: ''
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -50,7 +50,7 @@ export default function ContactModal({ isOpen, onClose }: ContactModalProps) {
         email: '',
         phone: '',
         street_address: '',
-        service_type: 'Lawn Mowing',
+        service_type: 'Lawn Mowing Bundle',
         service_details: ''
       });
 
@@ -168,7 +168,11 @@ export default function ContactModal({ isOpen, onClose }: ContactModalProps) {
               required
               className="w-full px-4 py-3 bg-white border-2 border-[#d0cdc5] rounded-lg text-[#4a4a4a] focus:outline-none focus:border-[#b0ada5] transition-colors"
             >
-              <option value="Lawn Mowing">Lawn Mowing</option>
+              <option value="Lawn Mowing Bundle">Lawn Mowing Bundle</option>
+              <option value="Lawn Care & Maintenance">Lawn Care &amp; Maintenance</option>
+              <option value="Tree & Hedge Trimming">Tree &amp; Hedge Trimming</option>
+              <option value="Sod Installation">Sod Installation</option>
+              <option value="Mulch Installation">Mulch Installation</option>
               <option value="Other">Other (type below)</option>
             </select>
           </div>

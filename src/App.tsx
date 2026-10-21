@@ -1,12 +1,21 @@
 import { ArrowRight } from 'lucide-react';
 import { useState } from 'react';
 import { Routes, Route, useNavigate } from 'react-router-dom';
+import ScrollToTop from './ScrollToTop';
 import Header from './Header';
 import Footer from './Footer';
 import Services from './Services';
 import About from './About';
 import ContactModal from './ContactModal';
 import Contact from './Contact';
+import LawnMowingBundlePage from './LawnMowingBundle';
+import LawnCareMaintenancePage from './LawnCareMaintenance';
+import TreeHedgeTrimmingPage from './TreeHedgeTrimming';
+import SodInstallationPage from './SodInstallation';
+import MulchInstallationPage from './MulchInstallation';
+import ServiceAreasPage from './ServiceAreas';
+import KerrvillePage from './KerrvillePage';
+import IngramPage from './IngramPage';
 
 function HomePage() {
   const [isContactModalOpen, setIsContactModalOpen] = useState(false);
@@ -201,12 +210,23 @@ function AboutPage() {
 
 function App() {
   return (
+    <>
+    <ScrollToTop />
     <Routes>
       <Route path="/" element={<HomePage />} />
       <Route path="/services" element={<ServicesPage />} />
       <Route path="/about" element={<AboutPage />} />
       <Route path="/contact" element={<Contact onNavigate={() => {}} onOpenContact={() => {}} />} />
+      <Route path="/services/lawn-mowing-bundle" element={<LawnMowingBundlePage />} />
+      <Route path="/services/lawn-care-maintenance" element={<LawnCareMaintenancePage />} />
+      <Route path="/services/tree-hedge-trimming" element={<TreeHedgeTrimmingPage />} />
+      <Route path="/services/sod-installation" element={<SodInstallationPage />} />
+      <Route path="/services/mulch-installation" element={<MulchInstallationPage />} />
+      <Route path="/service-areas" element={<ServiceAreasPage />} />
+      <Route path="/service-areas/kerrville" element={<KerrvillePage />} />
+      <Route path="/service-areas/ingram" element={<IngramPage />} />
     </Routes>
+    </>
   );
 }
 
