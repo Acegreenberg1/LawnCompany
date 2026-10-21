@@ -1,21 +1,12 @@
 import { ArrowRight } from 'lucide-react';
 import { useState } from 'react';
 import { Routes, Route, useNavigate } from 'react-router-dom';
-import ScrollToTop from './ScrollToTop';
 import Header from './Header';
 import Footer from './Footer';
 import Services from './Services';
 import About from './About';
 import ContactModal from './ContactModal';
 import Contact from './Contact';
-import LawnMowingBundlePage from './LawnMowingBundle';
-import LawnCareMaintenancePage from './LawnCareMaintenance';
-import TreeHedgeTrimmingPage from './TreeHedgeTrimming';
-import SodInstallationPage from './SodInstallation';
-import MulchInstallationPage from './MulchInstallation';
-import ServiceAreasPage from './ServiceAreas';
-import KerrvillePage from './KerrvillePage';
-import IngramPage from './IngramPage';
 
 function HomePage() {
   const [isContactModalOpen, setIsContactModalOpen] = useState(false);
@@ -178,31 +169,6 @@ function HomePage() {
         </div>
       </section>
 
-      {/* Map Section */}
-      <section className="px-8 md:px-16 lg:px-32 py-20 bg-[#e8e5dd]">
-        <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-12">
-            <p className="text-sm tracking-[0.3em] text-[#8a8a8a] mb-6">FIND US</p>
-            <h2 className="text-4xl md:text-5xl font-extralight text-[#5a5a5a] leading-tight">
-              Located in Kerrville, Serving the Hill Country
-            </h2>
-            <p className="text-lg text-[#4a4a4a] mt-6 max-w-2xl mx-auto leading-relaxed">
-              112 Holly Hill Dr, Kerrville, TX 78028 &nbsp;&middot;&nbsp; (830) 383-0189
-            </p>
-          </div>
-          <div className="w-full h-[450px] rounded-lg overflow-hidden border border-[#d0cdc5]">
-            <iframe
-              src="https://storage.googleapis.com/maps-solutions-woq1qq65py/locator-plus/c0m2/locator-plus.html"
-              width="100%"
-              height="100%"
-              style={{ border: 0 }}
-              loading="lazy"
-              title="Kerrville Lawn Company location map"
-            />
-          </div>
-        </div>
-      </section>
-
       <Footer />
       <ContactModal isOpen={isContactModalOpen} onClose={() => setIsContactModalOpen(false)} />
     </div>
@@ -235,23 +201,12 @@ function AboutPage() {
 
 function App() {
   return (
-    <>
-    <ScrollToTop />
     <Routes>
       <Route path="/" element={<HomePage />} />
       <Route path="/services" element={<ServicesPage />} />
       <Route path="/about" element={<AboutPage />} />
       <Route path="/contact" element={<Contact onNavigate={() => {}} onOpenContact={() => {}} />} />
-      <Route path="/services/lawn-mowing-bundle" element={<LawnMowingBundlePage />} />
-      <Route path="/services/lawn-care-maintenance" element={<LawnCareMaintenancePage />} />
-      <Route path="/services/tree-hedge-trimming" element={<TreeHedgeTrimmingPage />} />
-      <Route path="/services/sod-installation" element={<SodInstallationPage />} />
-      <Route path="/services/mulch-installation" element={<MulchInstallationPage />} />
-      <Route path="/service-areas" element={<ServiceAreasPage />} />
-      <Route path="/service-areas/kerrville" element={<KerrvillePage />} />
-      <Route path="/service-areas/ingram" element={<IngramPage />} />
     </Routes>
-    </>
   );
 }
 
