@@ -113,11 +113,11 @@ export default function MulchInstallationPage() {
       {/* Hero Image */}
       <div className="px-8 md:px-16 lg:px-32 bg-[#e8e5dd]">
         <div className="max-w-7xl mx-auto pb-16">
-          <div className="w-full h-96 md:h-[500px] lg:h-[600px] rounded-lg overflow-hidden mt-12 bg-[#d8d5cd]">
+          <div className="max-w-2xl mx-auto w-full h-[500px] md:h-[600px] lg:h-[700px] rounded-lg overflow-hidden mt-12">
             <img
               src="/20260804_154304.jpg"
               alt="Finished landscape bed with fresh mulch, river rock, and healthy plants in the Texas Hill Country"
-              className="w-full h-full object-contain"
+              className="w-full h-full object-cover"
             />
           </div>
         </div>
@@ -214,11 +214,11 @@ export default function MulchInstallationPage() {
               <h2 className="text-4xl md:text-5xl font-extralight text-[#5a5a5a] mb-8 leading-tight">
                 Benefits for Kerrville & Ingram Homeowners
               </h2>
-              <div className="w-full h-80 md:h-96 rounded-lg overflow-hidden bg-[#e8e5dd]">
+              <div className="w-full h-[400px] md:h-[500px] rounded-lg overflow-hidden">
                 <img
                   src="/20260713_180230.jpg"
                   alt="Mulch bed with rock border and established plants showing professional landscape bed maintenance"
-                  className="w-full h-full object-contain"
+                  className="w-full h-full object-cover"
                 />
               </div>
             </div>
@@ -355,11 +355,11 @@ export default function MulchInstallationPage() {
       <section className="px-8 md:px-16 lg:px-32 py-20">
         <div className="max-w-7xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
-            <div className="w-full h-96 md:h-[450px] rounded-lg overflow-hidden order-2 lg:order-1 bg-[#e8e5dd]">
+            <div className="w-full h-[400px] md:h-[500px] rounded-lg overflow-hidden order-2 lg:order-1">
               <img
                 src="/20260802_154845.jpg"
                 alt="Dirt path next to grass with dappled light on a Hill Country property near Kerrville"
-                className="w-full h-full object-contain"
+                className="w-full h-full object-cover"
               />
             </div>
             <div className="order-1 lg:order-2">
