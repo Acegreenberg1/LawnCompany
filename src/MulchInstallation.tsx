@@ -115,7 +115,7 @@ export default function MulchInstallationPage() {
         <div className="max-w-7xl mx-auto pb-16">
           <div className="w-full h-72 md:h-96 lg:h-[480px] rounded-lg overflow-hidden mt-12">
             <img
-              src="/Hero_Page_Image.jpg"
+              src="/mulchcircle.jpg"
               alt="Professional mulch installation and landscape bed work in Kerrville Texas"
               className="w-full h-full object-cover"
             />
@@ -216,7 +216,7 @@ export default function MulchInstallationPage() {
               </h2>
               <div className="w-full h-72 rounded-lg overflow-hidden">
                 <img
-                  src="/kerrville_slightly_lighter.jpg"
+                  src="/rocksintrailer.jpg"
                   alt="Landscape beds in Kerrville Texas Hill Country"
                   className="w-full h-full object-cover"
                 />
@@ -357,7 +357,7 @@ export default function MulchInstallationPage() {
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div className="w-full h-96 rounded-lg overflow-hidden order-2 lg:order-1">
               <img
-                src="/lawn_tools_under_2mb.jpg"
+                src="/boulderedrockbedwithfirewood.jpg"
                 alt="Landscape bed work equipment in Kerrville Texas"
                 className="w-full h-full object-cover"
               />
