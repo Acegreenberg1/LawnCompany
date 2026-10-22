@@ -115,7 +115,7 @@ export default function SodInstallationPage() {
         <div className="max-w-7xl mx-auto pb-16">
           <div className="w-full h-72 md:h-96 lg:h-[480px] rounded-lg overflow-hidden mt-12">
             <img
-              src="/Hero_Page_Image.jpg"
+              src="/brandnewsod.jpg"
               alt="Professional sod installation in Kerrville Texas"
               className="w-full h-full object-cover"
             />
@@ -216,7 +216,7 @@ export default function SodInstallationPage() {
               </h2>
               <div className="w-full h-72 rounded-lg overflow-hidden">
                 <img
-                  src="/lawn_tools_under_2mb.jpg"
+                  src="/sodinstallinprogress.jpg"
                   alt="Sod installation equipment and preparation"
                   className="w-full h-full object-cover"
                 />
@@ -474,7 +474,7 @@ export default function SodInstallationPage() {
             </div>
             <div className="w-full h-96 rounded-lg overflow-hidden">
               <img
-                src="/kerrville_slightly_lighter.jpg"
+                src="/wheelbarrow.jpg"
                 alt="Kerrville Texas Hill Country landscape"
                 className="w-full h-full object-cover"
               />
