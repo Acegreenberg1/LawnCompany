@@ -99,7 +99,7 @@ export default function About({ onOpenContact }: AboutProps) {
                 We invest in top-quality, well-maintained equipment to ensure every job is completed efficiently and to the highest standard. Our professional-grade tools allow us to handle properties of any size with precision and care.
               </p>
               <p className="text-lg text-[#4a4a4a] leading-relaxed">
-                From residential yards to commercial properties, we have the right equipment and expertise to make your lawn look its absolute best.
+                From residential yards to commercial properties, we have the right equipment and expertise to make your lawn look its absolute best
               </p>
             </div>
           </div>
