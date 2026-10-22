@@ -115,7 +115,7 @@ export default function LawnMowingBundlePage() {
         <div className="max-w-7xl mx-auto pb-16">
           <div className="w-full h-72 md:h-96 lg:h-[480px] rounded-lg overflow-hidden mt-12">
             <img
-              src="/leaf_blower.png"
+              src="/pretty_greenlawn.jpg"
               alt="Professional lawn care service in Kerrville Texas"
               className="w-full h-full object-cover"
             />
@@ -216,7 +216,7 @@ export default function LawnMowingBundlePage() {
               </h2>
               <div className="w-full h-72 rounded-lg overflow-hidden">
                 <img
-                  src="/kerrville_slightly_lighter.jpg"
+                  src="/Edgedsidewalk.jpg"
                   alt="Kerrville Texas Hill Country lawn and landscaping"
                   className="w-full h-full object-cover"
                 />
