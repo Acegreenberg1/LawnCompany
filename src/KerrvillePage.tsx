@@ -137,7 +137,7 @@ export default function KerrvillePage() {
             </div>
             <div className="w-full h-80 md:h-96 rounded-lg overflow-hidden">
               <img
-                src="/kerrville_slightly_lighter.jpg"
+                src="/sunsetwithrainbow.jpg"
                 alt="Kerrville Texas sign and landscape"
                 className="w-full h-full object-cover"
               />
@@ -231,7 +231,7 @@ export default function KerrvillePage() {
             </div>
             <div className="w-full h-full min-h-80">
               <img
-                src="/Hero_Page_Image.jpg"
+                src="/fawn.jpg"
                 alt="Kerrville lawn care service"
                 className="w-full h-80 md:h-full object-cover rounded-lg"
               />
