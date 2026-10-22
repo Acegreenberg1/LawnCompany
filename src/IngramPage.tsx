@@ -137,7 +137,7 @@ export default function IngramPage() {
             </div>
             <div className="w-full h-80 md:h-96 rounded-lg overflow-hidden">
               <img
-                src="/Hero_Page_Image.jpg"
+                src="/turtle.jpg"
                 alt="Ingram Texas lawn care"
                 className="w-full h-full object-cover"
               />
